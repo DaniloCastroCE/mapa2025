@@ -1,0 +1,39 @@
+#map {
+    height: calc(100vh - 12px);
+}
+
+.zoom-level {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 999;
+    border: 2px solid rgba(0,0,0,0.2);
+    width: 34px;
+    height: 34px;
+    font-size: 22px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaflet-control-zoom {
+    top: 40px !important;
+}
+
+.leaflet-control-layers {
+    top: 40px !important;
+}
+
+.leaflet-control-layers-toggle {
+    width: 30px !important; 
+    height: 30px !important; 
+}
+
+
+
+
