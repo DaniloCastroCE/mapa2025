@@ -20,4 +20,4 @@ const loading = () => {
 } 
 
 loading()
-setTimeout(loading, 10000);
+setTimeout(loading, 5000);
