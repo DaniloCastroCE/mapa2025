@@ -3,10 +3,18 @@ const locais = new Local()
 
 console.log(locais.getCountCond())
 
-
 const loading = () => {
     const loading = document.querySelector('#loading')
-    loading.classList.toggle("hidden")
+    loading.style.display = "flex"
+    if (!loading.classList.contains('anamationFadeIn') && !loading.classList.contains('anamationFadeOut')){
+        loading.classList.add('anamationFadeIn')
+    }
+    else if(loading.classList.contains('anamationFadeIn')){
+        loading.classList.remove('anamationFadeIn')
+        loading.classList.add('anamationFadeOut')
+    }
+    else if(loading.classList.contains('anamationFadeOut')){
+        loading.classList.remove('anamationFadeOut')
+        loading.classList.add('anamationFadeIn')
+    }
 } 
-
-setTimeout( loading , 3000 )

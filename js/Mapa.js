@@ -77,9 +77,12 @@ class Mapa {
         this.map.on('zoomend', () => {
             this.zoomLevel('zoom-level')
         })
+        
     }
 
     zoomLevel (id) {
         document.querySelector(`#${id}`).innerHTML = `${this.map.getZoom()}`
     }
+
+
 } 
