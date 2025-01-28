@@ -77,6 +77,11 @@ class Mapa {
         this.map.on('zoomend', () => {
             this.zoomLevel('zoom-level')
         })
+
+        this.map.on('contextmenu', function(e) {
+            alert(`Clique com o botão direito detectado!\nCoordenadas do clique:
+                latitude: ${e.latlng.lat.toFixed(5)} longitude: ${e.latlng.lng.toFixed(5)}`);
+        });
         
     }
 
