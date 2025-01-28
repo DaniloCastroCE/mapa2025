@@ -33,25 +33,7 @@
 }
 
 
-#loading img {
-    object-fit: fill;
-    width: 250px;
-    height: auto;
-}
 
-#loading p {
-    font-size: 1.8em;
-    color: white;
-    font-family: 'Archivo Black', sans-serif;
-}
-
-.anamationFadeIn {
-    animation: animationFadeIn 1s ease forwards;
-}
-
-.anamationFadeOut {
-    animation: animationFadeOut 0.5s ease forwards;
-}
 
 footer {
     width: 100%;
@@ -68,24 +50,5 @@ footer {
 }
 
 
-@keyframes animationFadeIn {
-    0% {
-        z-index: 9999;
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
 
-@keyframes animationFadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        z-index: 0;
-        opacity: 0;
-    }
-}
 

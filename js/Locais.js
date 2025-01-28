@@ -1293,6 +1293,8 @@ class Local {
             },
 
         ]
+
+        console.log(this.getCountCond())
     }
 
     transformarArray(id,array) {
