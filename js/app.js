@@ -18,3 +18,6 @@ const loading = () => {
         loading.classList.add('anamationFadeIn')
     }
 } 
+
+loading()
+setTimeout(loading, 5000);
