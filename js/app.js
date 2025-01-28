@@ -1,4 +1,4 @@
-const mapa = new Mapa([-3.74, -38.51], 14)
+const mapa = new Mapa([-3.74565, -38.51723], 14)
 const locais = new Local()
 
 console.log(locais.getCountCond())
