@@ -1,5 +1,5 @@
 class Mapa {
-    constructor(latLng, zoom) {
+    constructor(latLng, zoom, geoJson) {
         this.markers = []
         this.map = L.map('map').setView(latLng, zoom)
 
@@ -84,6 +84,28 @@ class Mapa {
                 latitude: ${e.latlng.lat.toFixed(5)} longitude: ${e.latlng.lng.toFixed(5)}`);
         });
 
+        function style(feature) {
+            return {
+                fillColor: 'white',
+                weight: 0.8,  // Largura do contorno
+                opacity: 1,
+                color: 'red',  // Cor do contorno
+                fillOpacity: 0.1  // Transparência interna (0.1 = 10% visível)
+            };
+        }
+
+        // Dados GeoJSON dos bairros de Fortaleza
+        let bairrosGeoJSON = geoJson.getFortaleza()
+        let arrayBairros = []
+        // Adiciona o GeoJSON ao mapa com os limites dos bairros
+        this.bairroFortaleza = L.geoJSON(bairrosGeoJSON, {
+            style: style,  // Aplica o estilo de contorno
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup("<b>Bairro: " + feature.properties.Nome + "</b>");
+                arrayBairros.push({ nome: feature.properties.Nome })
+            }
+        })
+
     }
 
     zoomLevel(id) {
@@ -113,7 +135,7 @@ class Mapa {
             this.markers.push({
                 marker: marker
             })
-            
+
             Object.assign(el, { idMarker: marker._leaflet_id })
             novoArray.push(el)
         })
@@ -122,5 +144,16 @@ class Mapa {
 
     getMarker(id) {
         return this.markers.find(obj => obj.marker._leaflet_id === id)
+    }
+
+    addBairros (cidade) {
+        if(cidade === 'fortaleza'){
+            this.bairroFortaleza.addTo(this.map)
+        }
+    }
+    removeBairros (cidade) {
+        if(cidade === 'fortaleza'){
+            this.map.removeLayer(this.bairroFortaleza)
+        }
     }
 } 
