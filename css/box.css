@@ -21,6 +21,10 @@
     right: 5px;
 }
 
+#slide-close svg{
+    cursor: pointer;
+}
+
 #slide-titulo{
     width: 345px;
     min-height: 80px;
@@ -34,3 +38,38 @@
     padding: 5px;
     margin-top: 10px;
 }
+
+.buscar {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 999;
+    padding: 2px;
+    min-width: 270px;
+    max-width: 370px;
+}
+
+.buscar input {
+    padding: 5px 2px;
+    height: 30px;
+    font-size: 20px;
+    width: 100%;
+}
+.buscar #ulBuscar {
+    overflow: auto;
+    max-height: calc(100vh - 55px);
+    width: 100%;
+    background-color: white;
+    list-style: none;
+}
+
+.buscar #ulBuscar li {
+    width: 100%;
+    padding: 4px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+.buscar #ulBuscar li:last-of-type {
+    margin-bottom: 0;
+} 

@@ -136,7 +136,7 @@ class Mapa {
     }
 
     getMarker(id) {
-        return this.markers.find(obj => obj.marker._leaflet_id === id)
+        return this.markers.find(obj => obj._leaflet_id === id)
     }
 
     addBairros (cidade) {

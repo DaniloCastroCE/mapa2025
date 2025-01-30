@@ -1372,10 +1372,13 @@ class Local {
     }
 
     nomeSimples (nome) {
-        return nome.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase()
+        return nome.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().trim()
     }
 
-    getLocal (nome) {
+    getBuscarLocais (nome) {
         return this.locais.filter(local => this.nomeSimples(local.nome).includes( this.nomeSimples(nome) )) 
+    }
+    getLocalIdMarker (idMarker) {
+        return this.locais.find(local => local.idMarker === idMarker)
     }
 }
