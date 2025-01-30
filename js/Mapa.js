@@ -112,8 +112,8 @@ class Mapa {
         document.querySelector(`#${id}`).innerHTML = `${this.map.getZoom()}`
     }
 
-    addMarker(local) {
-        return L.marker([local.lat, local.lon])
+    addMarker(local, callback) {
+        let marker = L.marker([local.lat, local.lon])
             .bindPopup(`<b>${local.nome}</b><br>${local.end.rua}, ${local.end.num}, ${local.end.bairro}`)
             .bindTooltip(`${local.nome[0].toUpperCase()}${local.nome.substr(1).toLowerCase()}`,
                 {
@@ -121,25 +121,18 @@ class Mapa {
                     direction: 'top'
                 }
             ).addTo(this.map)
+        
+        marker.on('click', () => {
+            callback({local: local, marker: marker})
+        })
+        Object.assign(local, ({idMarker: marker._leaflet_id}))
+        return marker
     }
 
-    addMultMaker(array) {
-        let novoArray = []
-        array.forEach((el, index) => {
-            const marker = this.addMarker(el)
-
-            marker.on('click', () => {
-                console.log(this.getMarker(marker._leaflet_id))
-            })
-
-            this.markers.push({
-                marker: marker
-            })
-
-            Object.assign(el, { idMarker: marker._leaflet_id })
-            novoArray.push(el)
+    addMultMaker(array, callback) {
+        array.forEach(el => {
+            this.markers.push(this.addMarker(el, callback))
         })
-        return novoArray
     }
 
     getMarker(id) {

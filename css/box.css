@@ -1,0 +1,36 @@
+
+.slide {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    min-width: 375px;
+    max-width: 375px;
+    height: calc(100vh - 12px);
+    z-index: 999;
+    background-color: white;
+    transition: right 0.5s ease;
+}
+
+.moveSlide {
+    right: 0;
+}
+
+#slide-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#slide-titulo{
+    width: 345px;
+    min-height: 80px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 20px 5px;
+}
+
+#slide-conteudo {
+    padding: 5px;
+    margin-top: 10px;
+}

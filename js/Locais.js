@@ -1371,4 +1371,11 @@ class Local {
         return count
     }
 
+    nomeSimples (nome) {
+        return nome.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase()
+    }
+
+    getLocal (nome) {
+        return this.locais.filter(local => this.nomeSimples(local.nome).includes( this.nomeSimples(nome) )) 
+    }
 }
