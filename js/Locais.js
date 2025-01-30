@@ -3,7 +3,7 @@ class Local {
         this.locais = [
 
             {
-                nome: "LOCKTEC", ativo: true, tipo: "não definido", dvr: "não definido", locktec: "FORTALEZA", lat: "-3.73030", lon: "-38.48041",
+                nome: "LOCKTEC", ativo: true, tipo: "não definido", dvr: "não definido", locktec: "FORTALEZA", lat: "-3.73017", lon: "-38.48057",
                 end: { rua: 'Oliveira Viana', num: '77', bairro: "Vicente Pinzon", cidade: "Fortaleza", sigla: "CE" }
             },
 
