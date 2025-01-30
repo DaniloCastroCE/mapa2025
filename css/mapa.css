@@ -2,6 +2,15 @@
     height: calc(100vh - 12px);
 }
 
+.leaflet-tooltip {
+    padding: 0 1px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Verdana", "Arial";
+    color: blue;
+}
+
 .zoom-level {
     position: absolute;
     display: flex;
