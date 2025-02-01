@@ -1,3 +1,7 @@
+#loading {
+    opacity: 0;
+}
+
 #loading img {
     object-fit: fill;
     width: 250px;

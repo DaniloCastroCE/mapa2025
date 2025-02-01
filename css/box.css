@@ -27,7 +27,6 @@
 
 #slide-titulo{
     width: 345px;
-    min-height: 80px;
     text-align: center;
     font-weight: 700;
     font-size: 22px;
@@ -35,8 +34,20 @@
 }
 
 #slide-conteudo {
+    width: 345px;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 5px;
+}
+
+#slide-conteudo p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#slide-conteudo a {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }
 
 .buscar {
@@ -66,8 +77,12 @@
 .buscar #ulBuscar li {
     width: 100%;
     padding: 4px;
-    background-color: red;
     margin-bottom: 20px;
+}
+
+.buscar #ulBuscar li:hover{
+    cursor: pointer;
+    background-color: rgb(230,230,230);
 }
 
 .buscar #ulBuscar li:last-of-type {

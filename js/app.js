@@ -1,6 +1,6 @@
+const loading = new Loading('loading')
 const mapa = new Mapa([-3.74565, -38.51723], 14, new GeoJson())
 const locais = new Local()
-const loading = new Loading('loading')
 var estado = ''
 
 try {
@@ -20,6 +20,7 @@ try {
                 `
             })
         }
+
     })
 
 } catch (error) {
@@ -44,6 +45,10 @@ const criarLiBuscar = (local) => {
     return `
     <div id="divBuscar${local.idMarker}">
         <h3>${local.nome}</h3>
+        <p>Endereço: ${local.end.rua}, ${local.end.num}</p>
+        <p>Bairro: ${local.end.bairro}</p>
+        <p>Cidade: ${local.end.cidade} / ${local.end.sigla}</p>
+        <p>Locktec: ${local.locktec}</p>
     </div>
     `
 }
@@ -73,16 +78,29 @@ const moveSlide = (op) => {
 let ultCLick = ''
 const onclickMarker = (obj) => {
     if (ultCLick !== obj.local.idMarker) {
+        const pesquisa = `${obj.local.nome}, ${obj.local.end.rua}, ${obj.local.end.num}, ${obj.local.end.cidade}, ${obj.local.end.cidade}`
         moveSlide('open')
         ultCLick = obj.local.idMarker
         document.querySelector('#slide-titulo').innerHTML = `${obj.local.nome}`
+        document.querySelector('#slide-conteudo').innerHTML = `
+            <p><b>Endereço:</b> ${obj.local.end.rua}, ${obj.local.end.num}</p>
+            <p><b>Bairro:</b> ${obj.local.end.bairro}</p>
+            <p><b>Cidade:</b> ${obj.local.end.cidade} / ${obj.local.end.sigla}</p>
+            <p><b>Locktec:</b> ${obj.local.locktec}</p>
+            <a href="https://www.google.com/maps/place/
+                        ${encodeURIComponent(`${obj.local.lat}, ${obj.local.lon}`)}" target="_blank">
+                        Latitude: ${parseFloat(obj.local.lat).toFixed(5)}<br>
+                        Longitude: ${parseFloat(obj.local.lon).toFixed(5)}</a>
+            <a href="http://www.google.com.br/search?q=${encodeURIComponent(pesquisa)}" target="_blank">Pesquisar no Google</a>
+            <a href="https://www.google.com.br/maps/@${obj.local.lat},${obj.local.lon},3a,75y,0h,90t/data=!3m6!1e1!3m4!1sXYZ12345PanoID!2e0!7i13312!8i6656" target="_blank">O que há aqui?</a>
+"
+        `
         obj.marker.openPopup()
         mapa.map.setView(obj.marker.getLatLng(), mapa.map.getZoom())
     } else {
         moveSlide('close')
     }
 }
-
 
 
 

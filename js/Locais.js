@@ -1377,7 +1377,9 @@ class Local {
 
     getBuscarLocais (nome) {
         return this.locais.filter(local => this.nomeSimples(local.nome).includes( this.nomeSimples(nome) )) 
+
     }
+    
     getLocalIdMarker (idMarker) {
         return this.locais.find(local => local.idMarker === idMarker)
     }
