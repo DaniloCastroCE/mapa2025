@@ -29,7 +29,7 @@
     width: 345px;
     text-align: center;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 24px;
     padding: 20px 5px;
 }
 
@@ -37,6 +37,7 @@
     width: 345px;
     padding: 5px;
     margin-top: 5px;
+    font-size: 18px;
 }
 
 #slide-conteudo p {
@@ -50,41 +51,53 @@
     margin-top: 25px;
 }
 
-.buscar {
+.painelFerramentas {
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
     top: 10px;
     left: 50px;
     z-index: 999;
     padding: 2px;
-    min-width: 270px;
-    max-width: 370px;
+    width: auto;
 }
 
-.buscar input {
+.painelFerramentas input {
     padding: 5px 2px;
     height: 30px;
     font-size: 20px;
+    min-width: 270px;
+    max-width: 370px;
     width: 100%;
 }
-.buscar #ulBuscar {
+
+.painelFerramentas #ulBuscar {
     overflow: auto;
     max-height: calc(100vh - 55px);
+    min-width: 270px;
+    max-width: 370px;
     width: 100%;
     background-color: white;
     list-style: none;
 }
 
-.buscar #ulBuscar li {
+.painelFerramentas #ulBuscar li {
     width: 100%;
     padding: 4px;
     margin-bottom: 20px;
 }
 
-.buscar #ulBuscar li:hover{
+.painelFerramentas #ulBuscar li:hover{
     cursor: pointer;
     background-color: rgb(230,230,230);
 }
 
-.buscar #ulBuscar li:last-of-type {
+.painelFerramentas #ulBuscar li:last-of-type {
     margin-bottom: 0;
-} 
+}
+
+.painelFerramentas #tools {
+    height: 30px;
+    cursor: pointer;
+}

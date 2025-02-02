@@ -2,6 +2,7 @@ const loading = new Loading('loading')
 const mapa = new Mapa([-3.74565, -38.51723], 14, new GeoJson())
 const locais = new Local()
 var estado = ''
+var listCopy = []
 
 try {
     loading.in()
@@ -33,7 +34,7 @@ try {
 const onclickLi = (idMarker) => {
     onclickMarker(
         {
-            local: locais.getLocalIdMarker(idMarker), 
+            local: locais.getLocalIdMarker(idMarker),
             marker: mapa.getMarker(idMarker)
         }
     )
@@ -70,6 +71,7 @@ const moveSlide = (op) => {
         mapa.classList.remove('box-mapMove')
         ultCLick = ''
         estado = ''
+        listCopy = []
         document.querySelector('#slide-conteudo').innerHTML = ''
         document.querySelector('#slide-titulo').innerHTML = ''
     }
@@ -77,7 +79,7 @@ const moveSlide = (op) => {
 
 let ultCLick = ''
 const onclickMarker = (obj) => {
-    if (ultCLick !== obj.local.idMarker) {
+    if (ultCLick !== obj.local.idMarker && estado === '') {
         const pesquisa = `${obj.local.nome}, ${obj.local.end.rua}, ${obj.local.end.num}, ${obj.local.end.cidade}, ${obj.local.end.cidade}`
         moveSlide('open')
         ultCLick = obj.local.idMarker
@@ -97,12 +99,42 @@ const onclickMarker = (obj) => {
         `
         obj.marker.openPopup()
         mapa.map.setView(obj.marker.getLatLng(), mapa.map.getZoom())
-    } else {
+    }
+    else if (estado === '') {
         moveSlide('close')
+    }
+    else if (estado === 'tools') {
+        let existe = false
+
+        listCopy.forEach(el => {
+            if(el.marker._leaflet_id === obj.marker._leaflet_id){
+                existe = true
+                return 
+            }
+        })
+
+        if(!existe) {
+            listCopy.push(obj)
+            document.querySelector('#slide-conteudo').innerHTML += `
+                    <p class="pTools">
+                        ${obj.local.nome}
+                    </p>
+                `
+        }
+
     }
 }
 
-
+const tools = () => {
+    if (estado === '') {
+        estado = 'tools'
+        document.querySelector('#slide-conteudo').innerHTML = ''
+        moveSlide('open')
+    } else if (estado === 'tools') {
+        moveSlide('close')
+    }
+    document.querySelector('#slide-titulo').innerHTML = `FERRAMENTAS`
+}
 
 
 

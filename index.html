@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Danilo Castro CE">
@@ -10,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
     <link rel="stylesheet" href="./css/box.css">
     <link rel="stylesheet" href="./css/padrao.css">
     <link rel="stylesheet" href="./css/mapa.css">
     <link rel="stylesheet" href="./css/loading.css">
 </head>
+
 <body>
     <div id="loading">
         <img src="./img/loading.gif" alt="loading">
@@ -30,20 +31,24 @@
         <div class="box-mapa">
             <div id="map"></div>
             <div id="zoom-level" class="zoom-level"></div>
-            <div class="buscar">
-                <input type="text" id="inp-buscar">
-                <ul id="ulBuscar"></ul>
+            <div class="painelFerramentas">
+                <div>
+                    <input type="text" id="inp-buscar">
+                    <ul id="ulBuscar"></ul>
+                </div>
+                <button id="tools" onclick="tools()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#273b6e">
+                        <path
+                            d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z" />
+                    </svg>
+                </button>
             </div>
         </div>
         <div class="slide" id="slide">
             <div id="slide-close">
-                <svg
-                    onclick="moveSlide('close')"
-                    xmlns="http://www.w3.org/2000/svg" 
-                    height="24px" 
-                    viewBox="0 -960 960 960" 
-                    width="24px"
-                    fill="#EA3323">
+                <svg onclick="moveSlide('close')" xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="#EA3323">
                     <path
                         d="m366-310 114-114 114 114 56-56-114-114 114-114-56-56-114 114-114-114-56 56 114 114-114 114 56 56ZM200-200v-560 560-1 1Zm0 80q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v334q-19-7-39-10.5t-41-3.5v-320H200v560h320q0 21 3.5 41t10.5 39H200Zm560 80-56-56 63-64H600v-80h167l-63-64 56-56 160 160L760-40Z" />
                 </svg>
@@ -57,14 +62,14 @@
         <span>By: Danilo Castro CE @2025</span>
     </footer>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-    
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
     <script src="./js/GeoJson.js"></script>
     <script src="./js/Loading.js"></script>
     <script src="./js/Locais.js"></script>
     <script src="./js/Mapa.js"></script>
     <script src="./js/app.js"></script>
-    
+
 </body>
+
 </html>
