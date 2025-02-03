@@ -125,7 +125,14 @@ class Mapa {
         marker.on('click', () => {
             callback({local: local, marker: marker})
         })
-        Object.assign(local, ({idMarker: marker._leaflet_id}))
+        Object.assign(local, (
+            {
+                idMarker: marker._leaflet_id,
+                nomeSimplificado: local.nome
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "")
+                    .toUpperCase().trim()
+            }))
         return marker
     }
 

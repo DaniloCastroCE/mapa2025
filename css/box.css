@@ -9,6 +9,7 @@
     z-index: 9999;
     background-color: white;
     transition: right 0.5s ease;
+    overflow: auto;
 }
 
 .moveSlide {
@@ -29,26 +30,71 @@
     width: 345px;
     text-align: center;
     font-weight: 700;
-    font-size: 24px;
-    padding: 20px 5px;
+    font-size: 26px;
+    padding: 20px 5px 10px;
 }
 
 #slide-conteudo {
     width: 345px;
     padding: 5px;
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #slide-conteudo p {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 #slide-conteudo a {
     display: flex;
     justify-content: center;
     margin-top: 25px;
+}
+
+.boxExibirP {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.boxExibirP span {
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxExibirP:hover {
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+   
+}
+
+.boxExibirP:active {
+    background-color: rgba(144,238,144,0.3);
+    
+}
+
+.pExibir {
+    text-align: left !important;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.btnExibir {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 5px;
 }
 
 .painelFerramentas {
@@ -97,7 +143,7 @@
     margin-bottom: 0;
 }
 
-.painelFerramentas #tools {
+.painelFerramentas #exibir {
     height: 30px;
     cursor: pointer;
 }
