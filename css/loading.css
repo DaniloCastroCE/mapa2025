@@ -15,7 +15,7 @@
 }
 
 .anamationFadeIn {
-    animation: animationFadeIn 1s ease forwards;
+    animation: animationFadeIn 0.5s ease forwards;
 }
 
 .anamationFadeOut {

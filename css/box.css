@@ -1,4 +1,8 @@
 
+.botao {
+    cursor: pointer;
+}
+
 .slide {
     position: fixed;
     top: 0;
@@ -6,7 +10,7 @@
     min-width: 375px;
     max-width: 375px;
     height: calc(100vh - 12px);
-    z-index: 9999;
+    z-index: 999;
     background-color: white;
     transition: right 0.5s ease;
     overflow: auto;
@@ -30,8 +34,8 @@
     width: 345px;
     text-align: center;
     font-weight: 700;
-    font-size: 26px;
-    padding: 20px 5px 10px;
+    font-size: 30px;
+    padding: 30px 5px 10px;
 }
 
 #slide-conteudo {
@@ -44,6 +48,13 @@
 #slide-conteudo p {
     text-align: center;
     margin-bottom: 8px;
+}
+
+.btnOneCond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
 
 #slide-conteudo a {
@@ -59,7 +70,7 @@
 }
 
 .boxExibirP span {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     border-radius: 50%;
     background-color: black;
@@ -92,7 +103,8 @@
 .btnExibir {
     margin-bottom: 10px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     padding: 10px 5px;
 }

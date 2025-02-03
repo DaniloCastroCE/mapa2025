@@ -1,6 +1,8 @@
 class Mapa {
     constructor(latLng, zoom, geoJson) {
+        this.exibir = false
         this.markers = []
+        this.listCopy = []
         this.map = L.map('map').setView(latLng, zoom)
 
         let layers = []
@@ -121,9 +123,9 @@ class Mapa {
                     direction: 'top'
                 }
             ).addTo(this.map)
-        
+
         marker.on('click', () => {
-            callback({local: local, marker: marker})
+            callback({ local: local, marker: marker })
         })
         Object.assign(local, (
             {
@@ -146,14 +148,50 @@ class Mapa {
         return this.markers.find(obj => obj._leaflet_id === id)
     }
 
-    addBairros (cidade) {
-        if(cidade === 'fortaleza'){
+    addBairros(cidade) {
+        if (cidade === 'fortaleza') {
             this.bairroFortaleza.addTo(this.map)
         }
     }
-    removeBairros (cidade) {
-        if(cidade === 'fortaleza'){
+    removeBairros(cidade) {
+        if (cidade === 'fortaleza') {
             this.map.removeLayer(this.bairroFortaleza)
         }
     }
+
+    verificarSeExisteMarker() {
+        let hasMarker = false;
+        this.map.eachLayer((layer) => {
+            if (layer instanceof L.Marker) {
+                hasMarker = true;
+            }
+        })
+        return hasMarker
+    }
+
+    toggleMarker() {
+        if (this.exibir) { // Adiconar Markers
+            this.markers.forEach(marker => {
+                marker.addTo(this.map)
+            })
+            this.exibir = false
+        }
+        else if (!this.exibir) { // Remover Markers
+
+            this.markers.forEach(marker => {
+                let remove = true
+
+                this.listCopy.forEach(elListCopy => {
+                    if (elListCopy.marker._leaflet_id === marker._leaflet_id) {
+                        remove = false
+                    }
+                })
+                if (remove) {
+                    this.map.removeLayer(marker)
+                }
+            })
+            this.exibir = true
+        }
+    }
+
 } 
