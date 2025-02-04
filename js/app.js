@@ -43,6 +43,17 @@ const init = () => {
 
 init()
 
+const goLocktec = () => {
+    try {
+        const locktec = locais.getBuscarLocais('locktec')
+        markerLocktec = mapa.getMarker(locktec[0].idMarker)
+        mapa.map.setView(markerLocktec.getLatLng(), mapa.map.getZoom())
+        markerLocktec.openPopup()
+    } catch (error) {
+        console.error(error)
+    }
+}
+
 const onclickLi = (idMarker) => {
     onclickMarker(
         {
@@ -86,7 +97,6 @@ const moveSlide = (op) => {
 
 let ultCLick = ''
 const onclickMarker = (obj) => {
-    console.log(obj.local)
     try {
         onclickCopy(obj.local.idMarker)
     } catch (error) {
