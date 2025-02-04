@@ -263,7 +263,6 @@ const onclickCopy = (idMarker) => {
     let copy =
         `*${local.nome}*
 Endereço: ${local.end.rua}, ${local.end.num} - ${local.end.bairro}
-
 `
     navigator.clipboard.writeText(copy)
     mapa.focoMarker(mapa.getMarker(idMarker))
