@@ -98,7 +98,7 @@ const moveSlide = (op) => {
 let ultCLick = ''
 const onclickMarker = (obj) => {
     try {
-        onclickCopy(obj.local.idMarker)
+        //onclickCopy(obj.local.idMarker)
     } catch (error) {
         console.error(error)
     }
