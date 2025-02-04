@@ -327,6 +327,9 @@ const onclickBtnExibir = (op) => {
         case 2:
             mapa.listCopy = []
             addExibir()
+            if (mapa.exibir) {
+                mapa.removerMarker()
+            }
             break;
         case 3:
             copyAll()
