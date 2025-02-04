@@ -48,6 +48,7 @@ const onclickLi = (idMarker) => {
     )
     document.querySelector('#ulBuscar').innerHTML = ''
     document.querySelector('#inp-buscar').value = ''
+    document.querySelector('#inp-buscar').focus()
 }
 
 
