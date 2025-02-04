@@ -107,7 +107,7 @@ const onclickMarker = (obj) => {
         const pesquisa = `${obj.local.nome}, ${obj.local.end.rua}, ${obj.local.end.num}, ${obj.local.end.cidade}, ${obj.local.end.cidade}`
         moveSlide('open')
         ultCLick = obj.local.idMarker
-        document.querySelector('#slide-titulo').innerHTML = `${obj.local.nome}`
+        document.querySelector('#slide-titulo').innerHTML = `<h3 class="botao" onclick="focoLocal(${obj.local.idMarker})">${obj.local.nome}</h3>`
         document.querySelector('#slide-conteudo').innerHTML = `
             <p style="margin-top: 50px;"><b>Endereço:</b> ${obj.local.end.rua}, ${obj.local.end.num}</p>
             <p><b>Bairro:</b> ${obj.local.end.bairro}</p>
@@ -161,6 +161,13 @@ const onclickMarker = (obj) => {
 
         }
     }
+
+}
+
+const focoLocal = (idMarker) => {
+    const marker = mapa.getMarker(idMarker)
+    mapa.focoMarker( marker )
+    marker.openPopup()
 
 }
 
