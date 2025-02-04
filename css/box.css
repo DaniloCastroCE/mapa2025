@@ -5,6 +5,8 @@
 
 .slide {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     top: 0;
     right: -400px;
     min-width: 375px;
@@ -13,7 +15,7 @@
     z-index: 999;
     background-color: white;
     transition: right 0.5s ease;
-    overflow: auto;
+    
 }
 
 .moveSlide {
@@ -31,7 +33,7 @@
 }
 
 #slide-titulo{
-    width: 345px;
+    width: 100%;
     text-align: center;
     font-weight: 700;
     font-size: 30px;
@@ -39,10 +41,11 @@
 }
 
 #slide-conteudo {
-    width: 345px;
+    width: 100%;
     padding: 5px;
     margin-top: 5px;
     font-size: 20px;
+    height: 75%;
 }
 
 #slide-conteudo p {
@@ -54,7 +57,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
 }
 
 #slide-conteudo a {
@@ -63,10 +65,16 @@
     margin-top: 25px;
 }
 
+#listaCond{
+    height: 100%;
+    overflow: auto;
+}
+
 .boxExibirP {
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 .boxExibirP span {

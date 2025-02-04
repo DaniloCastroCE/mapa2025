@@ -158,6 +158,10 @@ class Mapa {
             this.map.removeLayer(this.bairroFortaleza)
         }
     }
+    focoMarker (marker) {
+        this.map.setView(marker.getLatLng(), this.map.getZoom())
+        marker.openPopup()
+    }
 
     verificarSeExisteMarker() {
         let hasMarker = false;
@@ -188,6 +192,8 @@ class Mapa {
                 })
                 if (remove) {
                     this.map.removeLayer(marker)
+                }else {
+                    marker.closePopup()
                 }
             })
             this.exibir = true

@@ -76,7 +76,7 @@ const moveSlide = (op) => {
 
 let ultCLick = ''
 const onclickMarker = (obj) => {
-
+    
     try {
         onclickCopy(obj.local.idMarker)
     } catch (error) {
@@ -113,13 +113,12 @@ const onclickMarker = (obj) => {
                         Longitude: ${parseFloat(obj.local.lon).toFixed(5)}</a>
             <a href="http://www.google.com.br/search?q=${encodeURIComponent(pesquisa)}" target="_blank">Pesquisar no Google</a>
             <a href="https://www.google.com.br/maps/@${obj.local.lat},${obj.local.lon},3a,75y,0h,90t/data=!3m6!1e1!3m4!1sXYZ12345PanoID!2e0!7i13312!8i6656" target="_blank">O que há aqui?</a>
-"
         `
-        obj.marker.openPopup()
-        mapa.map.setView(obj.marker.getLatLng(), mapa.map.getZoom())
+        mapa.focoMarker(obj.marker)
     }
     else if (estado === '') {
         moveSlide('close')
+        obj.marker.closePopup()
     }
     else if (estado === 'exibir') {
         let existe = false
@@ -134,9 +133,12 @@ const onclickMarker = (obj) => {
         if (!existe) {
             mapa.listCopy.push(obj)
             addExibir()
-
+            mapa.focoMarker(obj.marker)
+        } else {
+            //obj.marker.closePopup()
         }
     }
+    
 }
 
 const addExibir = () => {
@@ -177,10 +179,11 @@ const addExibir = () => {
                     </svg>
                 </button>
             </div>
+            <div id="listaCond"></div>
         `
     for (let index = mapa.listCopy.length - 1; index >= 0; index--) {
         const ordem = (index + 1).toString().padStart(2, '0')
-        document.querySelector('#slide-conteudo').innerHTML +=
+        document.querySelector('#listaCond').innerHTML +=
             `
                 <div class="boxExibirP" onclick="onclickCopy(${mapa.listCopy[index].local.idMarker})">
                     <span>${ordem}</span>
@@ -195,14 +198,13 @@ const addExibir = () => {
 
 const onclickCopy = (idMarker) => {
     const local = locais.getLocalIdMarker(idMarker)
-
     let copy =
         `*${local.nome}*
 Endereço: ${local.end.rua}, ${local.end.num} - ${local.end.bairro}
 
 `
-    console.log('Copiado\n', copy)
     navigator.clipboard.writeText(copy)
+    mapa.focoMarker(mapa.getMarker(idMarker))
 
 }
 
