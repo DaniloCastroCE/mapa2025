@@ -199,5 +199,27 @@ class Mapa {
             this.exibir = true
         }
     }
+    removerMarker () {
+        this.markers.forEach(marker => {
+            let remove = true
+
+            this.listCopy.forEach(elListCopy => {
+                if (elListCopy.marker._leaflet_id === marker._leaflet_id) {
+                    remove = false
+                }
+            })
+            if (remove) {
+                this.map.removeLayer(marker)
+            }else {
+                marker.closePopup()
+            }
+        })
+    }
+
+    addOneMarker () {
+        this.listCopy.forEach(elListCopy => {
+            elListCopy.marker.addTo(this.map)
+        })
+    }
 
 } 
