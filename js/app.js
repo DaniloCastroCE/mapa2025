@@ -56,6 +56,7 @@ const onclickLi = (idMarker) => {
 
     if (mapa.exibir) {
         mapa.addOneMarker(idMarker)
+        mapa.focoMarker(mapa.getMarker(idMarker))
     }
 }
 
