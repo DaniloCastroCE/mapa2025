@@ -127,7 +127,7 @@ const onclickMarker = (obj) => {
             <p><b>Cidade:</b> ${obj.local.end.cidade} / ${obj.local.end.sigla}</p>
             <p><b>Locktec:</b> ${obj.local.locktec}</p>
             <div class="btnOneCond">
-                <button class="botao" type="button" onclick="onclickCopy(${obj.local.idMarker})">
+                <button class="botao botaoSvg" type="button" onclick="onclickCopy(${obj.local.idMarker})">
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         height="24px" 
@@ -214,7 +214,7 @@ const rolagemFocusLI = (idMarker) => {
 const addExibir = () => {
     document.querySelector('#slide-conteudo').innerHTML = `
             <div class="btnExibir">
-                <button class="botao" type="button" onclick="onclickBtnExibir(1)" id="btnExibir">
+                <button class="botao botaoSvg" type="button" onclick="onclickBtnExibir(1)" id="btnExibir">
                 
                     <svg xmlns="http://www.w3.org/2000/svg" 
                         height="24px" 
@@ -226,7 +226,7 @@ const addExibir = () => {
                     </svg>
                 
                 </button>
-                <button class="botao" type="button" onclick="onclickBtnExibir(2)">
+                <button class="botao botaoSvg" type="button" onclick="onclickBtnExibir(2)">
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         height="24px" 
@@ -237,7 +237,7 @@ const addExibir = () => {
                             d="M440-520h80v-280q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800v280ZM200-360h560v-80H200v80Zm-58 240h98v-80q0-17 11.5-28.5T280-240q17 0 28.5 11.5T320-200v80h120v-80q0-17 11.5-28.5T480-240q17 0 28.5 11.5T520-200v80h120v-80q0-17 11.5-28.5T680-240q17 0 28.5 11.5T720-200v80h98l-40-160H182l-40 160Zm676 80H142q-39 0-63-31t-14-69l55-220v-80q0-33 23.5-56.5T200-520h160v-280q0-50 35-85t85-35q50 0 85 35t35 85v280h160q33 0 56.5 23.5T840-440v80l55 220q13 38-11.5 69T818-40Zm-58-400H200h560Zm-240-80h-80 80Z"/>
                     </svg>
                 </button>
-                <button class="botao" type="button" onclick="onclickBtnExibir(3)">
+                <button class="botao botaoSvg" type="button" onclick="onclickBtnExibir(3)">
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         height="24px" 
@@ -248,7 +248,7 @@ const addExibir = () => {
                             d="M120-220v-80h80v80h-80Zm0-140v-80h80v80h-80Zm0-140v-80h80v80h-80ZM260-80v-80h80v80h-80Zm100-160q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480Zm40 240v-80h80v80h-80Zm-200 0q-33 0-56.5-23.5T120-160h80v80Zm340 0v-80h80q0 33-23.5 56.5T540-80ZM120-640q0-33 23.5-56.5T200-720v80h-80Zm420 80Z"/>
                     </svg>
                 </button>
-                <!--<button onclick="teste_TransArrayCodEmCopy()">teste</button>-->
+                <!--<button class="botao botaoSvg" onclick="teste_TransArrayCodEmCopy()">teste</button>-->
             </div>
             <div id="listaCond"></div>
         `

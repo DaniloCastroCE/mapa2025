@@ -1,6 +1,17 @@
 
+.botaoSvg {
+    width: 38px;
+    height: 38px;
+}
+
 .botao {
     cursor: pointer;
+}
+
+.botao svg {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
 }
 
 .slide {
