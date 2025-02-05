@@ -31,10 +31,10 @@
         <img src="./img/loading.gif" alt="loading">
         <p>Carregando . . .</p>
     </div>
-    <div id="logo" onclick="goLocktec()">
-        <img src="./img/logo-locktec.png" alt="locktec">
-    </div>
     <div class="box-main">
+        <div id="logo" onclick="goLocktec()">
+            <img src="./img/logo-locktec.png" alt="locktec">
+        </div>
         <div class="box-mapa">
             <div id="map"></div>
             <div id="zoom-level" class="zoom-level"></div>
@@ -43,28 +43,29 @@
                     <input type="text" id="inp-buscar">
                     <ul id="ulBuscar"></ul>
                 </div>
-                <button class="botaoPainel" id="exibir" onclick="exibir()">
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        height="24px" 
-                        viewBox="0 -960 960 960" 
-                        width="24px" 
+                <button class="botaoPainel" id="exibir" onclick="func_painelFerramentas('exibir')">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                         fill="#273b6e">
-                        <path 
-                            d="M320-280q17 0 28.5-11.5T360-320q0-17-11.5-28.5T320-360q-17 0-28.5 11.5T280-320q0 17 11.5 28.5T320-280Zm0-160q17 0 28.5-11.5T360-480q0-17-11.5-28.5T320-520q-17 0-28.5 11.5T280-480q0 17 11.5 28.5T320-440Zm0-160q17 0 28.5-11.5T360-640q0-17-11.5-28.5T320-680q-17 0-28.5 11.5T280-640q0 17 11.5 28.5T320-600Zm120 320h240v-80H440v80Zm0-160h240v-80H440v80Zm0-160h240v-80H440v80ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/>
+                        <path
+                            d="M320-280q17 0 28.5-11.5T360-320q0-17-11.5-28.5T320-360q-17 0-28.5 11.5T280-320q0 17 11.5 28.5T320-280Zm0-160q17 0 28.5-11.5T360-480q0-17-11.5-28.5T320-520q-17 0-28.5 11.5T280-480q0 17 11.5 28.5T320-440Zm0-160q17 0 28.5-11.5T360-640q0-17-11.5-28.5T320-680q-17 0-28.5 11.5T280-640q0 17 11.5 28.5T320-600Zm120 320h240v-80H440v80Zm0-160h240v-80H440v80Zm0-160h240v-80H440v80ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
                     </svg>
                 </button>
-                <button class="botaoPainel" id="bairro" onclick="addRemBairros()">
-                    <svg id="svgBairro"
-                        xmlns="http://www.w3.org/2000/svg" 
-                        height="24px" 
-                        viewBox="0 -960 960 960" 
-                        width="24px" 
-                        fill="#A52A2A">
-                        <path 
-                            d="M120-120v-560h160v-160h400v320h160v400H520v-160h-80v160H120Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 320h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Z"/>
+                <button class="botaoPainel" id="bairro" onclick="func_painelFerramentas('addRemBairros')">
+                    <svg id="svgBairro" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#A52A2A">
+                        <path
+                            d="M120-120v-560h160v-160h400v320h160v400H520v-160h-80v160H120Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 320h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Z" />
                     </svg>
                 </button>
+
+                <button class="botaoPainel display-none" onclick="func_painelFerramentas('buscarAvancada')">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#273b6e">
+                        <path
+                            d="M630-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160h-56L556-348q-21 14-45.5 21t-50.5 7q-75 0-127.5-52.5T280-500q0-75 52.5-127.5T460-680q75 0 127.5 52.5T640-500q0 27-7 51t-21 45l164 164h24v-480H160v480h390l80 80ZM460-400q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29ZM160-240v-480 480Z" />
+                    </svg>
+                </button>
+                <button class="botaoPainel display-none" onclick="teste_TranformarArrayEmCopy()">T</button>
             </div>
         </div>
         <div class="slide" id="slide">

@@ -8,6 +8,10 @@ body, html {
     height: 100vh;
 }
 
+.display-none {
+    display: none;
+}
+
 #logo {
     display: flex;
     position: absolute;

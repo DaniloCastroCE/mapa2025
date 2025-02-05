@@ -2,10 +2,22 @@ class Local {
     constructor() {
         this.locais = [
 
+// SEDE #################################################################
+
             {
-                nome: "LOCKTEC", lat: "-3.730170", lon: "-38.480570", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                nome: "LOCKTEC", lat: "-3.730170", lon: "-38.480570", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SEDE",
                 end: { rua: 'Oliveira Viana', num: '77', bairro: "Vicente Pinzon", cidade: "Fortaleza", sigla: "CE", }
             },
+            {
+                nome: "DOMÍNIO LOCKTEC", lat: "-23.610390", lon: "-46.639210", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SEDE",
+                end: { rua: 'Pitangueiras', num: '167', bairro: "Vila Saúde", cidade: "São Paulo", sigla: "SP", }
+            },
+
+
+
+
+// EM FORTALEZA #################################################################
+
             {
                 nome: "ÁGUA FRIA", lat: "-3.772874", lon: "-38.469882", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Cidade Ecológica', num: '80', bairro: "Edson Queiroz", cidade: "Fortaleza", sigla: "CE", }
@@ -43,12 +55,12 @@ class Local {
                 end: { rua: 'Ana Bilhar', num: '123', bairro: "Meireles", cidade: "Fortaleza", sigla: "CE", }
             },
             {
-                nome: "ATHALANTA", lat: "-3.729470", lon: "-38.494080", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Leonardo Mota', num: '340', bairro: "Meireles", cidade: "Fortaleza", sigla: "CE", }
-            },
-            {
                 nome: "ATALANTA", lat: "-3.815260", lon: "-38.468410", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Avenida Odilon Guimarães', num: '3740', bairro: "Curió", cidade: "Fortaleza", sigla: "CE", }
+            },
+            {
+                nome: "ATHALANTA", lat: "-3.729470", lon: "-38.494080", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Leonardo Mota', num: '340', bairro: "Meireles", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "AVALLON HILL", lat: "-3.748530", lon: "-38.526720", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -91,12 +103,12 @@ class Local {
                 end: { rua: 'Vicente Leite', num: '389', bairro: "Meireles", cidade: "Fortaleza", sigla: "CE", }
             },
             {
-                nome: "BRISAS DO JACAREY", lat: "-3.799700", lon: "-38.495240", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Chico Lemos', num: '1405', bairro: "Parque Iracema", cidade: "Fortaleza", sigla: "CE", }
-            },
-            {
                 nome: "BRISA DO LAGO I", lat: "-3.789300", lon: "-38.572103", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Avenida Bibio Frota', num: '551', bairro: "Parangaba", cidade: "Fortaleza", sigla: "CE", }
+            },
+            {
+                nome: "BRISAS DO JACAREY", lat: "-3.799700", lon: "-38.495240", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Chico Lemos', num: '1405', bairro: "Parque Iracema", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "BROMELIAS", lat: "-3.807960", lon: "-38.535310", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -423,12 +435,12 @@ class Local {
                 end: { rua: 'Paula Ney', num: '365', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
             },
             {
-                nome: "PARAÍSO", lat: "-3.728280", lon: "-38.481980", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Canindé', num: '797', bairro: "Varjota", cidade: "Fortaleza", sigla: "CE", }
-            },
-            {
                 nome: "PARAÍSO DA MARAPONGA", lat: "-3.796610", lon: "-38.567440", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Francisco Glicéiro', num: '722', bairro: "Maraponga", cidade: "Fortaleza", sigla: "CE", }
+            },
+            {
+                nome: "PARAÍSO", lat: "-3.728280", lon: "-38.481980", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Canindé', num: '797', bairro: "Varjota", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "PARK VILLAGE", lat: "-3.774410", lon: "-38.491870", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -511,6 +523,10 @@ class Local {
                 end: { rua: 'Coronel José Aurelio Câmara', num: '1400', bairro: "Vicente Pinzon", cidade: "Fortaleza", sigla: "CE", }
             },
             {
+                nome: "SAINT EXUPERY", lat: "-3.728709", lon: "-38.488166", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Pedro Rufino', num: '135', bairro: "Varjota", cidade: "Fortaleza", sigla: "CE", }
+            },
+            {
                 nome: "SAINT MORITZ", lat: "-3.746430", lon: "-38.475110", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Bento Albuquerque', num: '1550', bairro: "Cocó", cidade: "Fortaleza", sigla: "CE", }
             },
@@ -527,44 +543,40 @@ class Local {
                 end: { rua: 'Senador Pompeu', num: '2030', bairro: "José Bonifácio", cidade: "Fortaleza", sigla: "CE", }
             },
             {
-                nome: "SAN MATHEUS", lat: "-3.790470", lon: "-38.463780", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Olegário Memória', num: '2973', bairro: "Sapiranga", cidade: "Fortaleza", sigla: "CE", }
-            },
-            {
                 nome: "SAN MATHEUS", lat: "-3.736150", lon: "-38.522870", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Rocha Lima', num: '135', bairro: "Centro", cidade: "Fortaleza", sigla: "CE", }
+            },
+            {
+                nome: "SAN MATHEUS", lat: "-3.790470", lon: "-38.463780", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Olegário Memória', num: '2973', bairro: "Sapiranga", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "SAN THIAGO", lat: "-3.733570", lon: "-38.479100", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Avenida Engenheiro Alberto Sá', num: '231', bairro: "Papicu", cidade: "Fortaleza", sigla: "CE", }
             },
             {
-                nome: "SANTA CLARA", lat: "-3.753444", lon: "-38.571103", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Piauí', num: '1390', bairro: "Pici", cidade: "Fortaleza", sigla: "CE", }
+                nome: "SANT GERARD", lat: "-3.734673", lon: "-38.568486", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Rua 3', num: '255', bairro: "Presidente Kennedy", cidade: "Fortaleza", sigla: "CE", }
             },
             {
-                nome: "SANTOS DUMONT", lat: "-3.741710", lon: "-38.481830", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Avenida Santos Dumont', num: '5600', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
+                nome: "SANTA CLARA", lat: "-3.753444", lon: "-38.571103", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Piauí', num: '1390', bairro: "Pici", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "SANTOS DUMONT CENTER", lat: "-3.730600", lon: "-38.515460", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Avenida Santos Dumont', num: '905', bairro: "Centro", cidade: "Fortaleza", sigla: "CE", }
             },
             {
-                nome: "SANT GERARD", lat: "-3.734673", lon: "-38.568486", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Rua 3', num: '255', bairro: "Presidente Kennedy", cidade: "Fortaleza", sigla: "CE", }
-            },
-            {
-                nome: "SAINT EXUPERY", lat: "-3.728709", lon: "-38.488166", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Pedro Rufino', num: '135', bairro: "Varjota", cidade: "Fortaleza", sigla: "CE", }
-            },
-            {
-                nome: "SARAH", lat: "-3.732310", lon: "-38.478950", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Pascoal de Castro Alves', num: '332', bairro: "Vicente Pinzon", cidade: "Fortaleza", sigla: "CE", }
+                nome: "SANTOS DUMONT", lat: "-3.741710", lon: "-38.481830", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Avenida Santos Dumont', num: '5600', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "SÃO PAULO", lat: "-3.721530", lon: "-38.541060", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Avenida Filomeno Gomes', num: '733', bairro: "Jacarecanga", cidade: "Fortaleza", sigla: "CE", }
+            },
+            {
+                nome: "SARAH", lat: "-3.732310", lon: "-38.478950", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Pascoal de Castro Alves', num: '332', bairro: "Vicente Pinzon", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "SECULUS", lat: "-3.810420", lon: "-38.525580", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -603,12 +615,12 @@ class Local {
                 end: { rua: 'Tibúrcio Cavalcante', num: '1660', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
             },
             {
-                nome: "TOSCANA", lat: "-3.816090", lon: "-38.483210", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Travessa Neném', num: '120', bairro: "Cambeba", cidade: "Fortaleza", sigla: "CE", }
-            },
-            {
                 nome: "TORRICELI", lat: "-3.739590", lon: "-38.497380", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Leonardo Mota', num: '1520', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
+            },
+            {
+                nome: "TOSCANA", lat: "-3.816090", lon: "-38.483210", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Travessa Neném', num: '120', bairro: "Cambeba", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "TUIUTI", lat: "-3.732590", lon: "-38.504880", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -655,6 +667,10 @@ class Local {
                 end: { rua: 'Rua do Corrente', num: '317', bairro: "Edson Queiroz", cidade: "Fortaleza", sigla: "CE", }
             },
             {
+                nome: "VILLAGE ÁGUA FRIA (QUADRA 01)", lat: "-3.775510", lon: "-38.472730", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'F', num: '50', bairro: "Edson Queiroz", cidade: "Fortaleza", sigla: "CE", }
+            },
+            {
                 nome: "VILLAGE ÁGUA FRIA (QUADRA 02)", lat: "-3.776330", lon: "-38.472980", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'F', num: '101', bairro: "Edson Queiroz", cidade: "Fortaleza", sigla: "CE", }
             },
@@ -663,12 +679,12 @@ class Local {
                 end: { rua: 'Rua D', num: '50', bairro: "Parque Dois Irmãos", cidade: "Fortaleza", sigla: "CE", }
             },
             {
-                nome: "VILLAGE ÁGUA FRIA (QUADRA 01)", lat: "-3.775510", lon: "-38.472730", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'F', num: '50', bairro: "Edson Queiroz", cidade: "Fortaleza", sigla: "CE", }
-            },
-            {
                 nome: "VILLAGGIO RAVENNA", lat: "-3.867572", lon: "-38.468977", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Carmelita Rebouças', num: '136', bairro: "Pedra", cidade: "Eusébio", sigla: "CE", }
+            },
+            {
+                nome: "VIRGEM DE FÁTIMA", lat: "-3.734110", lon: "-38.542740", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Bela Cruz', num: '2200', bairro: "Farias Brito", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "VISCONDE DE CAUYPE", lat: "-3.736370", lon: "-38.534830", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -678,10 +694,12 @@ class Local {
                 nome: "VISCONDE DE MAUÁ", lat: "-3.730460", lon: "-38.497630", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Visconde de Mauá', num: '500', bairro: "Meireles", cidade: "Fortaleza", sigla: "CE", }
             },
-            {
-                nome: "VIRGEM DE FÁTIMA", lat: "-3.734110", lon: "-38.542740", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Bela Cruz', num: '2200', bairro: "Farias Brito", cidade: "Fortaleza", sigla: "CE", }
-            },
+
+
+
+
+// FORA DE FORTALEZA #################################################################
+
             {
                 nome: "ALAMEDA DOS PINHEIROS VI ", lat: "-8.187534", lon: "-35.578948", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Avenida Manoel Santiago de Oliveira', num: '1200', bairro: "Novo Gravatá", cidade: "Gravatá", sigla: "PE", }
@@ -691,16 +709,20 @@ class Local {
                 end: { rua: 'Presidente Pedreira', num: '89', bairro: "Ingá", cidade: "Niterói", sigla: "RJ", }
             },
             {
-                nome: "AROEIRA", lat: "-23.587320", lon: "-46.632710", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
-                end: { rua: 'Doutor Neto de Araujo', num: '238', bairro: "Vila Mariana", cidade: "São Paulo", sigla: "SP", }
+                nome: "AMALFI", lat: "-23.530273", lon: "-46.718856", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
+                end: { rua: 'Princesa Leopoldina', num: '595', bairro: "Alto da Lapa", cidade: "São Paulo", sigla: "SP", }
             },
             {
                 nome: "ARMANDO RABELO", lat: "-8.045250", lon: "-34.892533", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Rui Calaca', num: '94', bairro: "Espinheiro", cidade: "Recife", sigla: "PE", }
             },
             {
-                nome: "AMALFI", lat: "-23.530273", lon: "-46.718856", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
-                end: { rua: 'Princesa Leopoldina', num: '595', bairro: "Alto da Lapa", cidade: "São Paulo", sigla: "SP", }
+                nome: "AROEIRA", lat: "-23.587320", lon: "-46.632710", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
+                end: { rua: 'Doutor Neto de Araujo', num: '238', bairro: "Vila Mariana", cidade: "São Paulo", sigla: "SP", }
+            },
+            {
+                nome: "BANDEIRANTE JOÃO DO PRADO", lat: "-22.974500", lon: "-43.193200", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'Pompeu Loureiro', num: '94', bairro: "Copacabana", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
                 nome: "BARÃO DA FONTE", lat: "-8.041726", lon: "-34.894847", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
@@ -711,16 +733,16 @@ class Local {
                 end: { rua: 'Paulo Silva Araújo', num: '221', bairro: "Méler", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
-                nome: "BANDEIRANTE JOÃO DO PRADO", lat: "-22.974500", lon: "-43.193200", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
-                end: { rua: 'Pompeu Loureiro', num: '94', bairro: "Copacabana", cidade: "Rio de Janeiro", sigla: "RJ", }
-            },
-            {
                 nome: "BARRA ZEN", lat: "-23.005340", lon: "-43.442520", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
                 end: { rua: 'Doze', num: '50', bairro: "Recreio dos Bandeirantes", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
                 nome: "BEACH WAY", lat: "-8.723447", lon: "-35.092618", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Euclides da Cunha', num: 'S/N', bairro: "LOT Luiziana QD-J", cidade: "Tamandaré", sigla: "PE", }
+            },
+            {
+                nome: "CASA DOS FLAMBOYANTS", lat: "-22.927720", lon: "-43.227720", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'Rua dos Araujos', num: '105', bairro: "Tijuca", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
                 nome: "CHAMPS ELYSEES", lat: "-22.928010", lon: "-43.231610", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
@@ -731,24 +753,8 @@ class Local {
                 end: { rua: 'Conselheiro Nabuco', num: '246', bairro: "Casa Amarela", cidade: "Recife", sigla: "PE", }
             },
             {
-                nome: "CASA DOS FLAMBOYANTS", lat: "-22.927720", lon: "-43.227720", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
-                end: { rua: 'Rua dos Araujos', num: '105', bairro: "Tijuca", cidade: "Rio de Janeiro", sigla: "RJ", }
-            },
-            {
                 nome: "CIUDAD SEVILHA", lat: "-8.028510", lon: "-34.908650", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Abel de Sá Bezerra Cavalcanti', num: '74', bairro: "Casa Amarela", cidade: "Recife", sigla: "PE", }
-            },
-            {
-                nome: "COSTA AZUL", lat: "-23.632470", lon: "-46.639780", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
-                end: { rua: 'Itatiaia', num: '307', bairro: "Vila Guarani (Zona Sul)", cidade: "São Paulo", sigla: "SP", }
-            },
-            {
-                nome: "DISEGNO CASAS BOUTIQUE", lat: "-23.010340", lon: "-43.424710", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
-                end: { rua: 'Ministro Lafayette Andrada', num: '710', bairro: "Barra da Tijuca", cidade: "Rio de Janeiro", sigla: "RJ", }
-            },
-            {
-                nome: "DORMAR", lat: "-8.063112", lon: "-34.877885", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
-                end: { rua: 'Engenheiro Ubaldo Gomes de Matos', num: '53', bairro: "Santo Antônio", cidade: "Recife", sigla: "PE", }
             },
             {
                 nome: "CONDE DA BARCA", lat: "-22.981582", lon: "-43.225747", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
@@ -759,52 +765,60 @@ class Local {
                 end: { rua: 'Benjamin Batista', num: '197', bairro: "Jardim Botânico", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
+                nome: "COSTA AZUL", lat: "-23.632470", lon: "-46.639780", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
+                end: { rua: 'Itatiaia', num: '307', bairro: "Vila Guarani (Zona Sul)", cidade: "São Paulo", sigla: "SP", }
+            },
+            {
                 nome: "DANIELLE MORAIS", lat: "-8.197871", lon: "-34.918916", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Oscar Pereira', num: '37', bairro: "Candeias", cidade: "João dos Guararapes", sigla: "PE", }
             },
             {
-                nome: "DOMÍNIO LOCKTEC", lat: "-23.610390", lon: "-46.639210", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
-                end: { rua: 'Pitangueiras', num: '167', bairro: "Vila Saúde", cidade: "São Paulo", sigla: "SP", }
+                nome: "DISEGNO CASAS BOUTIQUE", lat: "-23.010340", lon: "-43.424710", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'Ministro Lafayette Andrada', num: '710', bairro: "Barra da Tijuca", cidade: "Rio de Janeiro", sigla: "RJ", }
+            },
+            {
+                nome: "DORMAR", lat: "-8.063112", lon: "-34.877885", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
+                end: { rua: 'Engenheiro Ubaldo Gomes de Matos', num: '53', bairro: "Santo Antônio", cidade: "Recife", sigla: "PE", }
             },
             {
                 nome: "DUQUE DANJOU", lat: "-22.983680", lon: "-43.197210", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
                 end: { rua: 'Barão da Torre', num: '15', bairro: "Ipanema", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
-                nome: "ESPAÇOS DOS MANACÁS", lat: "-23.526370", lon: "-46.706800", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
-                end: { rua: 'João Anes', num: '144', bairro: "Alto da Lapa", cidade: "São Paulo", sigla: "SP", }
-            },
-            {
                 nome: "EDEN", lat: "-23.635300", lon: "-46.643300", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
                 end: { rua: 'Carnaubeiras', num: '122', bairro: "Jabaquara", cidade: "São Paulo", sigla: "SP", }
+            },
+            {
+                nome: "ESPAÇOS DOS MANACÁS", lat: "-23.526370", lon: "-46.706800", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
+                end: { rua: 'João Anes', num: '144', bairro: "Alto da Lapa", cidade: "São Paulo", sigla: "SP", }
             },
             {
                 nome: "FAROL DO PORTO", lat: "-8.140130", lon: "-34.909920", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Almirante Batista Leão', num: '76', bairro: "Boa Viagem", cidade: "Recife", sigla: "PE", }
             },
             {
-                nome: "GEOMAR", lat: "-22.973250", lon: "-43.191110", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
-                end: { rua: 'Barata Ribeiro', num: '662', bairro: "Copacabana", cidade: "Rio de Janeiro", sigla: "RJ", }
+                nome: "FREGUESIA TOWER", lat: "-22.944100", lon: "-43.335520", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'Comandante Rúbens Silva', num: '1000', bairro: "Freguesia (Jacarepaguá)", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
                 nome: "GAN EDEN", lat: "-22.927223", lon: "-43.253919", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
                 end: { rua: 'Paula Brito', num: '350', bairro: "Andarí", cidade: "RJ", sigla: "RJ", }
             },
             {
-                nome: "GUARATUBA", lat: "-23.633530", lon: "-46.642420", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
-                end: { rua: 'Guaratuba', num: '280', bairro: "Vila Guarani (Zona Sul)", cidade: "São Paulo", sigla: "SP", }
+                nome: "GEOMAR", lat: "-22.973250", lon: "-43.191110", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'Barata Ribeiro', num: '662', bairro: "Copacabana", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
                 nome: "GUADALUPE", lat: "-8.190495", lon: "-34.921071", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Comendador Sá Barreto', num: '365', bairro: "Candeias", cidade: "Jaboatão dos Guararapes", sigla: "PE", }
             },
             {
-                nome: "FREGUESIA TOWER", lat: "-22.944100", lon: "-43.335520", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
-                end: { rua: 'Comandante Rúbens Silva', num: '1000', bairro: "Freguesia (Jacarepaguá)", cidade: "Rio de Janeiro", sigla: "RJ", }
-            },
-            {
                 nome: "GUARARAPES", lat: "-8.083016", lon: "-34.988214", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Mostarda', num: '3133', bairro: "Curado", cidade: "Jaboatão dos Guararapes", sigla: "PE", }
+            },
+            {
+                nome: "GUARATUBA", lat: "-23.633530", lon: "-46.642420", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
+                end: { rua: 'Guaratuba', num: '280', bairro: "Vila Guarani (Zona Sul)", cidade: "São Paulo", sigla: "SP", }
             },
             {
                 nome: "HIGH POINT", lat: "-23.627250", lon: "-46.724010", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
@@ -823,12 +837,12 @@ class Local {
                 end: { rua: 'Conde de Bonfim', num: '807', bairro: "Tijuca", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
-                nome: "INOCÊNCIO RODRIGUES", lat: "-8.029400", lon: "-34.908310", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
-                end: { rua: 'Estrada do Arraial', num: '2885', bairro: "Parnamirim", cidade: "Recife", sigla: "PE", }
+                nome: "IMPERIAL LARANJEIRAS", lat: "-22.932911", lon: "-43.185743", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'Rua das Laranjeiras', num: '192', bairro: "Laranjeiras", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
-                nome: "LOGOS", lat: "-23.572520", lon: "-46.625610", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
-                end: { rua: 'Rua Paulo Orozimbo', num: '584', bairro: "Cambicu", cidade: "São Paulo", sigla: "SP", }
+                nome: "INOCÊNCIO RODRIGUES", lat: "-8.029400", lon: "-34.908310", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
+                end: { rua: 'Estrada do Arraial', num: '2885', bairro: "Parnamirim", cidade: "Recife", sigla: "PE", }
             },
             {
                 nome: "ITAPUAMA", lat: "-7.997570", lon: "-34.840100", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
@@ -839,12 +853,12 @@ class Local {
                 end: { rua: 'Cônego Eugênio leite', num: '613', bairro: "Pinheiros", cidade: "São Paulo", sigla: "SP", }
             },
             {
-                nome: "IMPERIAL LARANJEIRAS", lat: "-22.932911", lon: "-43.185743", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
-                end: { rua: 'Rua das Laranjeiras', num: '192', bairro: "Laranjeiras", cidade: "Rio de Janeiro", sigla: "RJ", }
-            },
-            {
                 nome: "KING DAVID", lat: "-23.649000", lon: "-46.644260", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
                 end: { rua: 'Rua das Grumixamas', num: '399', bairro: "Vila Parque Jabaquara", cidade: "São Paulo", sigla: "SP", }
+            },
+            {
+                nome: "LOGOS", lat: "-23.572520", lon: "-46.625610", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
+                end: { rua: 'Rua Paulo Orozimbo', num: '584', bairro: "Cambicu", cidade: "São Paulo", sigla: "SP", }
             },
             {
                 nome: "MADONNA DELLE GRAZIE", lat: "-22.889561", lon: "-42.999290", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
@@ -861,6 +875,10 @@ class Local {
             {
                 nome: "MAQUINÉ", lat: "-22.932500", lon: "-43.244920", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
                 end: { rua: 'João Alfredo', num: '25', bairro: "Tijuca", cidade: "Rio de Janeiro", sigla: "RJ", }
+            },
+            {
+                nome: "MARSELLE", lat: "-22.942150", lon: "-43.192840", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'Belisário Távora', num: '231', bairro: "Laranjeiras", cidade: "Rio de janeiro", sigla: "RJ", }
             },
             {
                 nome: "MILENIUM", lat: "-22.938280", lon: "-43.336970", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
@@ -883,10 +901,6 @@ class Local {
                 end: { rua: 'Martiniano de Carvalho', num: '960', bairro: "Bela Vista", cidade: "São Paulo", sigla: "SP", }
             },
             {
-                nome: "MARSELLE", lat: "-22.942150", lon: "-43.192840", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
-                end: { rua: 'Belisário Távora', num: '231', bairro: "Laranjeiras", cidade: "Rio de janeiro", sigla: "RJ", }
-            },
-            {
                 nome: "OSVALDO CORDEIRO DE FARIA", lat: "-8.083650", lon: "-34.939090", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Avenida São Paulo', num: '305', bairro: "Jardim São Paulo", cidade: "Recife", sigla: "PE", }
             },
@@ -907,12 +921,16 @@ class Local {
                 end: { rua: 'Antônio Curado', num: '307', bairro: "Engenho do Meio", cidade: "Recife", sigla: "PE", }
             },
             {
+                nome: "PRAÇA DAS FIGUEIRAS", lat: "-8.051310", lon: "-34.907660", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
+                end: { rua: 'Pessoa de Melo', num: '227', bairro: "Madalena", cidade: "Recife", sigla: "PE", }
+            },
+            {
                 nome: "PRAÇA DOS FICUS", lat: "-8.054920", lon: "-34.913790", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Avenida Caxangá', num: '521', bairro: "Madalena", cidade: "Recife", sigla: "PE", }
             },
             {
-                nome: "PRAÇA DAS FIGUEIRAS", lat: "-8.051310", lon: "-34.907660", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
-                end: { rua: 'Pessoa de Melo', num: '227', bairro: "Madalena", cidade: "Recife", sigla: "PE", }
+                nome: "PRAIA LEME", lat: "-22.961392", lon: "-43.165393", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'Praça Almirante Júlio de Noronha', num: 'S/N', bairro: "Leme", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
                 nome: "PRIVILEGE", lat: "-22.935990", lon: "-43.335873", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
@@ -925,10 +943,6 @@ class Local {
             {
                 nome: "REQUINTE DO RIO", lat: "-22.919360", lon: "-43.224330", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
                 end: { rua: 'Pereira de Siqueira', num: '15', bairro: "Tijuda", cidade: "Rio de Janeiro", sigla: "RJ", }
-            },
-            {
-                nome: "PRAIA LEME", lat: "-22.961392", lon: "-43.165393", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
-                end: { rua: 'Praça Almirante Júlio de Noronha', num: 'S/N', bairro: "Leme", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
                 nome: "RESIDENCIAL BARÃO", lat: "-23.532600", lon: "-46.649100", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
@@ -947,16 +961,12 @@ class Local {
                 end: { rua: 'travessa Coelho Gomes', num: '10', bairro: "Icaraí", cidade: "Niterói", sigla: "RJ", }
             },
             {
-                nome: "SÃO DOMINGOS", lat: "-22.900490", lon: "-43.127920", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
-                end: { rua: 'General Andrade Neves', num: '317', bairro: "São Domingos", cidade: "Niterói", sigla: "RJ", }
-            },
-            {
                 nome: "SÃO CAETANO", lat: "-8.113060", lon: "-35.292390", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Cândido Cardoso Fontes', num: '87', bairro: "Matriz", cidade: "Vitória de Santo Antão", sigla: "PE", }
             },
             {
-                nome: "SPLENDOR TABOÃO", lat: "-23.604236", lon: "-46.759425", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
-                end: { rua: 'Rua das Magnólias', num: '17', bairro: "parque Assunção", cidade: "Taboão da Serra", sigla: "SP", }
+                nome: "SÃO DOMINGOS", lat: "-22.900490", lon: "-43.127920", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'General Andrade Neves', num: '317', bairro: "São Domingos", cidade: "Niterói", sigla: "RJ", }
             },
             {
                 nome: "SÃO JUDAS PARK", lat: "-23.624544", lon: "-46.641301", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
@@ -967,28 +977,32 @@ class Local {
                 end: { rua: 'Praça da Sé', num: '21', bairro: "Sé", cidade: "São Paulo", sigla: "SP", }
             },
             {
-                nome: "STUDIO ONE CLASSIC", lat: "-8.142475", lon: "-34.908457", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
-                end: { rua: 'Sá e Souza', num: '1205', bairro: "Boa Viagem", cidade: "Recife", sigla: "PE", }
-            },
-            {
                 nome: "SIBIPIRUNAS", lat: "-22.943330", lon: "-43.034320", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
                 end: { rua: 'Sibipirunas', num: '138', bairro: "Maravista", cidade: "Niterói", sigla: "RJ", }
-            },
-            {
-                nome: "SUNNY SIDE", lat: "-22.458944", lon: "-43.156645", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
-                end: { rua: 'Estrada do Carangola', num: '1953', bairro: "Carangola", cidade: "Petrópolis", sigla: "RJ", }
             },
             {
                 nome: "SÓRIA", lat: "-8.131380", lon: "-34.902240", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Avenida Engenheiro Domingos Ferreira', num: '5027', bairro: "Boa Viagem", cidade: "Recife", sigla: "PE", }
             },
             {
-                nome: "TIMONEIRO", lat: "-8.136920", lon: "-34.902730", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
-                end: { rua: 'Setúbal', num: '682', bairro: "Boa Viagem", cidade: "Recife", sigla: "PE", }
+                nome: "SPLENDOR TABOÃO", lat: "-23.604236", lon: "-46.759425", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
+                end: { rua: 'Rua das Magnólias', num: '17', bairro: "parque Assunção", cidade: "Taboão da Serra", sigla: "SP", }
+            },
+            {
+                nome: "STUDIO ONE CLASSIC", lat: "-8.142475", lon: "-34.908457", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
+                end: { rua: 'Sá e Souza', num: '1205', bairro: "Boa Viagem", cidade: "Recife", sigla: "PE", }
+            },
+            {
+                nome: "SUNNY SIDE", lat: "-22.458944", lon: "-43.156645", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'Estrada do Carangola', num: '1953', bairro: "Carangola", cidade: "Petrópolis", sigla: "RJ", }
             },
             {
                 nome: "TAIO", lat: "-8.057430", lon: "-34.930160", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Taió', num: '201', bairro: "Cordeiro", cidade: "Recife", sigla: "PE", }
+            },
+            {
+                nome: "TIMONEIRO", lat: "-8.136920", lon: "-34.902730", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
+                end: { rua: 'Setúbal', num: '682', bairro: "Boa Viagem", cidade: "Recife", sigla: "PE", }
             },
             {
                 nome: "TOUR DEL PANE", lat: "-22.907605", lon: "-43.130920", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
@@ -1003,12 +1017,12 @@ class Local {
                 end: { rua: 'Dona Inácia Uchôa', num: '52', bairro: "Vila Mariana", cidade: "São Paulo", sigla: "SP", }
             },
             {
-                nome: "VERA CRUZ", lat: "-22.973150", lon: "-43.191080", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
-                end: { rua: 'Barata Ribeiro', num: '658', bairro: "Copacabana", cidade: "Rio de Janeiro", sigla: "RJ", }
-            },
-            {
                 nome: "VALPARAÍSO", lat: "-22.520240", lon: "-43.194610", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
                 end: { rua: 'Avenida Portugal', num: '415', bairro: "Valparaíso", cidade: "Petrópolis", sigla: "RJ", }
+            },
+            {
+                nome: "VERA CRUZ", lat: "-22.973150", lon: "-43.191080", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'Barata Ribeiro', num: '658', bairro: "Copacabana", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
                 nome: "VIAREGGIO", lat: "-23.628800", lon: "-46.635330", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
@@ -1017,6 +1031,10 @@ class Local {
             {
                 nome: "VILA DO CONDE", lat: "-8.086331", lon: "-34.957069", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'João Ferreira', num: '70', bairro: "Sancho", cidade: "Recife", sigla: "PE", }
+            },
+            {
+                nome: "VILLA DI NAPOLE", lat: "-22.923880", lon: "-43.358200", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'Alexandre Ramos', num: '535', bairro: "Pechincha", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
                 nome: "VILLAGE DAS PEDRAS", lat: "-22.931384", lon: "-42.898232", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
@@ -1030,25 +1048,22 @@ class Local {
                 nome: "VIVENDAS DO MARACANÃ", lat: "-22.914850", lon: "-43.231430", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
                 end: { rua: 'Isidro de Figueiredo', num: '26', bairro: "Maracanã", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
-            {
-                nome: "VILLA DI NAPOLE", lat: "-22.923880", lon: "-43.358200", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
-                end: { rua: 'Alexandre Ramos', num: '535', bairro: "Pechincha", cidade: "Rio de Janeiro", sigla: "RJ", }
-            },
         ]
 
         console.log(this.getCountCond())
     }
 
-    transformarArray(id, array, op) {
+    transformarArray(array) {
         let copy = ''
-        const locais = (array && array.length > 0) ? array : this.locais
-        try {
-            const box = document.querySelector(`#${id}`)
-            box.innerHTML = ''
-        } catch (error) {
-            console.error(error)
+        let localDividido = {
+            sede: [],
+            for: [],
+            nFor: [],
+            tt: 0
         }
-        locais.forEach(el => {
+        const locais = (array && array.length > 0) ? array : this.locais
+
+        locais.forEach((el, index) => {
             let cod = ''
 
             if (el.ativo) {
@@ -1081,24 +1096,83 @@ class Local {
                 cod += 'locktec: "RECIFE", '
             }
 
-            if (op === 'html') {
-                box.innerHTML += `{ nome: "${el.nome}", ${cod}  lat: "${el.lat}", lon: "${el.lon}", 
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;end: { rua: '${el.end.rua}', num: '${el.end.num}', bairro: "${el.end.bairro}", cidade: "${el.end.cidade}", sigla: "${el.end.sigla}" } },<br><br>`
-            }
-            else if (op === 'copy') {
 
-                copy +=
+            if (typeof el.locktec !== 'undefined' && el.locktec.toLowerCase() === 'sede') {
+                localDividido.sede.push(
+                    `{ 
+        nome: "${el.nome}", lat: "${parseFloat(el.lat).toFixed(6)}", lon: "${parseFloat(el.lon).toFixed(6)}", ${cod}  
+        end: { rua: '${el.end.rua}', num: '${el.end.num}', bairro: "${el.end.bairro}", cidade: "${el.end.cidade}", sigla: "${el.end.sigla}", } 
+    },
+    `
+                )
+
+            }
+            else if (el.end.sigla.toLowerCase() === 'ce') {
+                localDividido.for.push(
                     `{ 
     nome: "${el.nome}", lat: "${parseFloat(el.lat).toFixed(6)}", lon: "${parseFloat(el.lon).toFixed(6)}", ${cod}  
     end: { rua: '${el.end.rua}', num: '${el.end.num}', bairro: "${el.end.bairro}", cidade: "${el.end.cidade}", sigla: "${el.end.sigla}", } 
 },
 `
-                navigator.clipboard.writeText(copy)
-                console.log('copiado com sucesso')
+                )
             }
-        })
-    }
+            else {
+                localDividido.nFor.push(
+                    `{ 
+    nome: "${el.nome}", lat: "${parseFloat(el.lat).toFixed(6)}", lon: "${parseFloat(el.lon).toFixed(6)}", ${cod}  
+    end: { rua: '${el.end.rua}', num: '${el.end.num}', bairro: "${el.end.bairro}", cidade: "${el.end.cidade}", sigla: "${el.end.sigla}", } 
+},
+`
+                )
+            }
+            localDividido.tt++
 
+        })
+
+        localDividido.for.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+        localDividido.nFor.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+
+
+
+        if (localDividido.sede.length > 0) {
+            copy +=
+                `
+// SEDE #################################################################
+    
+    `
+            localDividido.sede.forEach(el => {
+                copy += (el !== undefined) ? el : ''
+            })
+        }
+        copy +=
+            `
+
+
+
+// EM FORTALEZA #################################################################
+
+`
+
+        localDividido.for.forEach(el => {
+            copy += (el !== undefined) ? el : ''
+        })
+        copy +=
+            `
+
+
+
+// FORA DE FORTALEZA #################################################################
+
+`
+        localDividido.nFor.forEach(el => {
+            copy += (el !== undefined) ? el : ''
+        })
+
+        console.log(localDividido)
+        navigator.clipboard.writeText(copy)
+        console.log('copiado com sucesso')
+    }
+    
     getCountCond(array) {
         const locais = (array && array.length > 0) ? array : this.locais
         const count = {
@@ -1132,15 +1206,61 @@ class Local {
     }
 
     nomeSimples(nome) {
-        return nome.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().trim()
+        return nome.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim()
     }
 
     getBuscarLocais(nome) {
-        return this.locais.filter(local => this.nomeSimples(local.nome).includes(this.nomeSimples(nome)))
+        return this.locais.filter(
+            local => this.nomeSimples(local.nome).includes(this.nomeSimples(nome))
+        )
 
     }
 
     getLocalIdMarker(idMarker) {
         return this.locais.find(local => local.idMarker === idMarker)
+    }
+
+    getBuscarAtributo(attr, buscar, array) {
+        if (
+            attr === `${this.nomeSimples('nome')}` ||
+            attr === `${this.nomeSimples('ativo')}` ||
+            attr === `${this.nomeSimples('idMarker')}` ||
+            attr === `${this.nomeSimples('locktec')}` ||
+            attr === `${this.nomeSimples('tipo')}`
+        ) {
+            if (typeof array === 'undefined') {
+                return this.locais.filter(
+                    local => this.nomeSimples(local[attr]).includes(this.nomeSimples(buscar))
+                )
+            } else {
+                return array.filter(
+                    local => this.nomeSimples(local[attr]).includes(this.nomeSimples(buscar))
+                )
+            }
+        }
+        else if (
+            attr === `${this.nomeSimples('rua')}` ||
+            attr === `${this.nomeSimples('bairro')}` ||
+            attr === `${this.nomeSimples('cidade')}` ||
+            attr === `${this.nomeSimples('sigla')}`
+        ) {
+            if (typeof array === 'undefined') {
+                return this.locais.filter(
+                    local => this.nomeSimples(local.end[attr]).includes(this.nomeSimples(buscar))
+                )
+            } else {
+                return array.filter(
+                    local => this.nomeSimples(local.end[attr]).includes(this.nomeSimples(buscar))
+                )
+            }
+        }
+        else {
+            return "Atributo não encontrado"
+        }
+
+    }
+
+    getListas() {
+
     }
 }

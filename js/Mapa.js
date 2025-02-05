@@ -153,11 +153,13 @@ class Mapa {
             this.bairroFortaleza.addTo(this.map)
         }
     }
+
     removeBairros(cidade) {
         if (cidade === 'fortaleza') {
             this.map.removeLayer(this.bairroFortaleza)
         }
     }
+    
     focoMarker (marker) {
         this.map.setView(marker.getLatLng(), this.map.getZoom())
         marker.openPopup()
