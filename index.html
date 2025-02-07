@@ -25,12 +25,18 @@
     <link rel="stylesheet" href="./css/mapa.css">
     <link rel="stylesheet" href="./css/loading.css">
     <link rel="stylesheet" href="./css/toast.css">
+    <link rel="stylesheet" href="./css/modal.css">
 </head>
 
 <body>
     <div id="loading">
         <img src="./img/loading.gif" alt="loading">
         <p>Carregando . . .</p>
+    </div>
+    <div class="modal display-none">
+        <div class="modal-body">
+            <div class="modal-conteudo"></div>
+        </div>
     </div>
     <div class="box-main">
         <div id="logo" onclick="goLocktec()">
@@ -59,7 +65,7 @@
                     </svg>
                 </button>
 
-                <button class="botaoPainel display-none" onclick="func_painelFerramentas('buscarAvancada')">
+                <button class="botaoPainel" onclick="func_painelFerramentas('buscarAvancada')">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                         fill="#273b6e">
                         <path
@@ -89,7 +95,8 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-        <script src="./js/Toast.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/Toast.js"></script>
     <script src="./js/GeoJson.js"></script>
     <script src="./js/Loading.js"></script>
     <script src="./js/Locais.js"></script>

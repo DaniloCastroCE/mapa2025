@@ -209,3 +209,17 @@
 .mudarCorSVGBTN {
     fill: #273b6e;
 }
+
+#selecionadoBusAvan {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    padding: 2px;
+}
+
+#selecionadoBusAvan option, 
+#selecionadoBusAvan select, 
+#boxCampoDebusAvan input {
+    height: 30px;
+    font-size: 20px
+}

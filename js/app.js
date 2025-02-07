@@ -158,13 +158,60 @@ const addRemBairros = () => {
 const buscarAvancada = () => {
     if (estado !== 'buscarAvancada') {
         document.querySelector('#slide-titulo').innerHTML = `BUSCA AVANÇADA`
-        document.querySelector('#slide-conteudo').innerHTML = ''
+        document.querySelector('#slide-conteudo').innerHTML = addConteudoBuscaAvancada()
         estado = 'buscarAvancada'
         moveSlide('open')
     } else {
         moveSlide('close')
     }
 }
+
+const addConteudoBuscaAvancada = () => {
+    return `
+        <div id="selecionadoBusAvan">
+            <select name="opcoes" id="opcoes" onchange="changeSelectBusAva(event)">
+                <option value="nome" selected>Nome</option>
+                <option value="rua">Rua</option>
+                <option value="bairro">Bairro</option>
+                <option value="tipo" disabled>Tipo</option>
+                <option value="locktec" disabled>Locktec</option>
+            </select>
+            
+            <div id="boxCampoDebusAvan"><input type="text" onchange="onchageBoxCampoDebusAvan(event,'nome')"></div>
+        </div>
+    `
+}
+
+const changeSelectBusAva = (e) => {
+    const valor = e.target.value
+    const campoBusca = document.querySelector('#boxCampoDebusAvan')
+    console.log(valor)
+    switch (valor) {
+        case 'nome':
+        case 'rua': 
+        case 'bairro':
+            campoBusca.innerHTML = `
+                <input type="text" onchange="onchageBoxCampoDebusAvan(event,'${valor}')">
+            `
+            break;
+        case 'tipo':
+            campoBusca.innerHTML = `
+                
+            `
+        case 'locktec':
+            campoBusca.innerHTML = `
+                
+            `
+        default:
+            break;
+    }
+}
+
+const onchageBoxCampoDebusAvan = (e,attr) => {
+    const valor = e.target.value
+    console.log(locais.getBuscarAtributo(attr,valor))
+}
+
 
 const goLocktec = () => {
     try {
