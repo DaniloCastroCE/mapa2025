@@ -265,8 +265,9 @@ const clickBuscaAvancada = () => {
         }
         else {
             alert(`${attr.value} '${inputBusca.value}' não foi encontrado`)
-            inputBusca.value = ''
         }
+        inputBusca.value = ''
+        inputBusca.focus()
         
     }
 }
