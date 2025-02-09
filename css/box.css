@@ -223,3 +223,21 @@
     height: 30px;
     font-size: 20px
 }
+
+#boxCampoDebusAvan{
+    display: flex;
+    flex-direction: row;
+}
+
+#boxCampoDebusAvan input {
+    width: 100%;
+}
+
+#boxCampoDebusAvan button {
+    margin-right: 10px;
+}
+
+#listaBusAva {
+    overflow: auto;
+    height: calc(100% - 50px);
+}

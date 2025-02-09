@@ -66,7 +66,7 @@ const exibir = () => {
         estado = 'exibir'
         document.querySelector('#slide-titulo').innerHTML = `LISTA`
         document.querySelector('#slide-conteudo').innerHTML = ''
-        addExibir()
+        addExibir('slide-conteudo')
         moveSlide('open')
     } else if (estado === 'exibir') {
         moveSlide('close')
@@ -74,8 +74,8 @@ const exibir = () => {
 
 }
 
-const addExibir = () => {
-    document.querySelector('#slide-conteudo').innerHTML = `
+const addExibir = (id) => {
+    document.querySelector(`#${id}`).innerHTML = `
             <div class="btnExibir">
                 <button class="botao botaoSvg" type="button" onclick="onclickBtnExibir(1)" id="btnExibir">
                 
@@ -159,6 +159,7 @@ const buscarAvancada = () => {
     if (estado !== 'buscarAvancada') {
         document.querySelector('#slide-titulo').innerHTML = `BUSCA AVANÇADA`
         document.querySelector('#slide-conteudo').innerHTML = addConteudoBuscaAvancada()
+        addExibir('listaBusAva')
         estado = 'buscarAvancada'
         moveSlide('open')
     } else {
@@ -176,30 +177,43 @@ const addConteudoBuscaAvancada = () => {
                 <option value="tipo" disabled>Tipo</option>
                 <option value="locktec" disabled>Locktec</option>
             </select>
-            
-            <div id="boxCampoDebusAvan"><input type="text" onchange="onchageBoxCampoDebusAvan(event,'nome')"></div>
+            <div id="boxCampoDebusAvan">
+                <div id="boxInpuBusAvan">
+                    <input id="inpuBusAvan" type="text" onkeydown="onkeydownBoxCampoDebusAvan(event)">                
+                </div>
+                <button type="click" onclick="clickBuscaAvancada()">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        height="24px" 
+                        viewBox="0 -960 960 960" 
+                        width="24px" 
+                        fill="#273b6e">
+                        <path 
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                    </svg>
+                </button>
+            </div>
         </div>
+        <div id="listaBusAva"></div>
     `
 }
 
 const changeSelectBusAva = (e) => {
-    const valor = e.target.value
-    const campoBusca = document.querySelector('#boxCampoDebusAvan')
-    console.log(valor)
-    switch (valor) {
+    const boxInpuBusAvan = document.querySelector('#boxInpuBusAvan')
+    switch (e.target.value) {
         case 'nome':
         case 'rua': 
         case 'bairro':
-            campoBusca.innerHTML = `
-                <input type="text" onchange="onchageBoxCampoDebusAvan(event,'${valor}')">
+            boxInpuBusAvan.innerHTML = `
+                <input id="inpuBusAvan" type="text" onkeydown="onkeydownBoxCampoDebusAvan(event)">
             `
             break;
         case 'tipo':
-            campoBusca.innerHTML = `
+            boxInpuBusAvan.innerHTML = `
                 
             `
         case 'locktec':
-            campoBusca.innerHTML = `
+            boxInpuBusAvan.innerHTML = `
                 
             `
         default:
@@ -207,9 +221,45 @@ const changeSelectBusAva = (e) => {
     }
 }
 
-const onchageBoxCampoDebusAvan = (e,attr) => {
-    const valor = e.target.value
-    console.log(locais.getBuscarAtributo(attr,valor))
+const onkeydownBoxCampoDebusAvan = (e) => {
+    if(e.key === 'Enter'){
+        clickBuscaAvancada()
+    }
+    
+}
+
+const clickBuscaAvancada = () => {
+    const inputBusca = document.querySelector('#inpuBusAvan')
+    const attr = document.querySelector('#opcoes')
+
+    if(inputBusca.value.length < 1){
+        alert('Digite no mínimo dois caracteres')
+    }
+    else if (inputBusca.value.length > 1) {
+        const arrayBuscaAva = locais.getBuscarAtributo(attr.value,inputBusca.value)
+        if(arrayBuscaAva.length > 0){
+            mapa.listCopy = []
+            arrayBuscaAva.forEach(el => {
+                mapa.listCopy.push(
+                    {
+                        local: el,
+                        marker: mapa.getMarker(el.idMarker)
+                    }
+                )
+            })
+            addExibir('listaBusAva')
+        
+            if(mapa.exibir){
+                mapa.removerMarker()
+                mapa.addOneMarker()
+            }
+        }
+        else {
+            alert(`${attr.value} '${inputBusca.value.toUpperCase()}' não foi encontrada`)
+            inputBusca.value = ''
+        }
+        
+    }
 }
 
 
@@ -320,7 +370,7 @@ const onclickMarker = (obj) => {
 
         if (!existe) {
             mapa.listCopy.push(obj)
-            addExibir()
+            addExibir('slide-conteudo')
             mapa.focoMarker(obj.marker)
         } else {
             //obj.marker.closePopup()
@@ -366,7 +416,7 @@ const rolagemFocusLI = (idMarker) => {
 
 const deletaItemLista = (index) => {
     mapa.listCopy.splice(index, 1)
-    addExibir()
+    addExibir('slide-conteudo')
     if (mapa.exibir) {
         mapa.removerMarker()
     }
@@ -428,7 +478,8 @@ const onclickBtnExibir = (op) => {
             break;
         case 2:
             mapa.listCopy = []
-            addExibir()
+            //addExibir('slide-conteudo')
+            document.querySelector('#listaCond').innerHTML = ''
             if (mapa.exibir) {
                 mapa.removerMarker()
             }
