@@ -232,7 +232,7 @@ const clickBuscaAvancada = () => {
     const inputBusca = document.querySelector('#inpuBusAvan')
     const attr = document.querySelector('#opcoes')
 
-    if(inputBusca.value.length < 1){
+    if(inputBusca.value.length <= 1){
         alert('Digite no mínimo dois caracteres')
     }
     else if (inputBusca.value.length > 1) {
