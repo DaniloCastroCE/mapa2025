@@ -251,7 +251,16 @@ const clickBuscaAvancada = () => {
         
             if(mapa.exibir){
                 mapa.removerMarker()
-                mapa.addOneMarker()
+                if(mapa.listCopy.length > 100){
+                    loading.in()
+                    setTimeout(() => {
+                        mapa.addOneMarker()
+                        loading.out()
+                    }, 1000);
+                }else {
+                    mapa.addOneMarker()
+                }
+                
             }
         }
         else {
