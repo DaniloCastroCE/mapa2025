@@ -429,7 +429,11 @@ const rolagemFocusLI = (idMarker) => {
 
 const deletaItemLista = (index) => {
     mapa.listCopy.splice(index, 1)
-    addExibir('slide-conteudo')
+    if(estado === 'exibir'){
+        addExibir('slide-conteudo')
+    }else if(estado === 'buscarAvancada'){
+        addExibir('listaBusAva')
+    }
     if (mapa.exibir) {
         mapa.removerMarker()
     }
