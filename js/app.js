@@ -255,7 +255,7 @@ const clickBuscaAvancada = () => {
             }
         }
         else {
-            alert(`${attr.value} '${inputBusca.value.toUpperCase()}' não foi encontrada`)
+            alert(`${attr.value} '${inputBusca.value}' não foi encontrado`)
             inputBusca.value = ''
         }
         
@@ -358,7 +358,7 @@ const onclickMarker = (obj) => {
         moveSlide('close')
         obj.marker.closePopup()
     }
-    else if (estado === 'exibir') {
+    else if (estado === 'exibir' || estado === 'buscarAvancada') {
         let existe = false
 
         mapa.listCopy.forEach(el => {
@@ -370,7 +370,11 @@ const onclickMarker = (obj) => {
 
         if (!existe) {
             mapa.listCopy.push(obj)
-            addExibir('slide-conteudo')
+            if(estado === 'exibir'){
+                addExibir('slide-conteudo')
+            }else if(estado === 'buscarAvancada'){
+                addExibir('listaBusAva')
+            }
             mapa.focoMarker(obj.marker)
         } else {
             //obj.marker.closePopup()
