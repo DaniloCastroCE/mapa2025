@@ -112,6 +112,7 @@ const addExibir = (id) => {
                     </svg>
                 </button>
             </div>
+            <div id="listaItensBusca"></div>
             <div id="listaCond"></div>
         `
 
@@ -237,6 +238,7 @@ const clickBuscaAvancada = () => {
     }
     else if (inputBusca.value.length > 1) {
         const arrayBuscaAva = locais.getBuscarAtributo(attr.value,inputBusca.value)
+        addListItensBusca(attr.value, inputBusca.value, arrayBuscaAva)
         if(arrayBuscaAva.length > 0){
             mapa.listCopy = []
             arrayBuscaAva.forEach(el => {
@@ -270,6 +272,25 @@ const clickBuscaAvancada = () => {
         inputBusca.focus()
         
     }
+}
+
+
+let listArrayItensBusca = []
+
+const addListItensBusca = (attr,busca,array) => {
+    let arrayBuscas = []
+    array.forEach(el => {
+        arrayBuscas.push({
+            local: el,
+            marker: mapa.getMarker(el.idMarker)
+        })
+    })
+    listArrayItensBusca.push({
+        attr: attr,
+        busca: busca,
+        listCopy: arrayBuscas
+    })
+    console.log(listArrayItensBusca)
 }
 
 

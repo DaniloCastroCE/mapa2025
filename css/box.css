@@ -56,6 +56,8 @@
     margin-top: 5px;
     font-size: 20px;
     height: calc(100% - 35px);
+    display: flex;
+    flex-direction: column;
 }
 
 #slide-conteudo p {
@@ -77,8 +79,9 @@
 }
 
 #listaCond{
-    overflow: auto;
-    height: calc(100% - 100px);
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: calc(100% - 90px);
 }
 
 .boxExibirP {
@@ -139,6 +142,7 @@
 
 .btnExibir {
     margin-bottom: 10px;
+    max-height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,6 +242,52 @@
 }
 
 #listaBusAva {
-    overflow: auto;
-    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 80px);
+}
+
+#listaItensBusca {
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.boxItensBusca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 1px;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.boxItensBusca p {
+    margin: 0 !important;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.spanSvgItensBusca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spanSvgItensBusca svg{
+    width: 15px;
+    height: 15px;
+}
+
+.spanSvgItensBusca span {
+    height: 100%;
+    font-size: 10px;
+
 }
