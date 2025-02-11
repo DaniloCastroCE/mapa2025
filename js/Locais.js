@@ -166,6 +166,12 @@ class Local {
                 nome: "DOM BOSCO", lat: "-3.808360", lon: "-38.568750", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: '26° Batalhão', num: '291', bairro: "Mondubim", cidade: "Fortaleza", sigla: "CE", }
             },
+
+            {
+                nome: "EDIFICIO TURANDOT", lat: "-3.735558", lon: "-38.474554", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Alfeu Aboim', num: '535', bairro: "Papicu", cidade: "Fortaleza", sigla: "CE", }
+            },
+
             {
                 nome: "ETA CARENAE", lat: "-3.729900", lon: "-38.494090", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Leonardo Mota', num: '303', bairro: "Meireles", cidade: "Fortaleza", sigla: "CE", }
