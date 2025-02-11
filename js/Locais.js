@@ -24,7 +24,7 @@ class Local {
             },
             {
                 nome: "ALBERTO VIANA", lat: "-3.726390", lon: "-38.502350", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Silvia Jatahy', num: '160', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Silvia Jatahy', num: '160', bairro: "Meireles", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "ANGRA", lat: "-3.724250", lon: "-38.486320", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -56,7 +56,7 @@ class Local {
             },
             {
                 nome: "ATALANTA", lat: "-3.815260", lon: "-38.468410", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Avenida Odilon Guimarães', num: '3740', bairro: "Curió", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Avenida Odilon Guimarães', num: '3740', bairro: "Lagoa Redonda", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "ATHALANTA", lat: "-3.729470", lon: "-38.494080", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -72,7 +72,7 @@ class Local {
             },
             {
                 nome: "BARCELONA", lat: "-3.732970", lon: "-38.514420", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Antônio Augusto', num: '1450', bairro: "Meireles", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Antônio Augusto', num: '1450', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "BARRAMAR E BARRASOL", lat: "-3.732360", lon: "-38.479930", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -80,7 +80,7 @@ class Local {
             },
             {
                 nome: "BELIZE", lat: "-3.761207", lon: "-38.490335", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Rua Professor Jacinto Botelho', num: '425', bairro: "Edson Queiroz", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Rua Professor Jacinto Botelho', num: '425', bairro: "Guararapes", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "BELLE MONDUBIM", lat: "-3.834460", lon: "-38.587570", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -124,7 +124,7 @@ class Local {
             },
             {
                 nome: "CARMEL ATLANTICO", lat: "-3.746930", lon: "-38.456650", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Avenida Trajano de Medeiro', num: '3233', bairro: "Vicente Pinzon", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Avenida Trajano de Medeiros', num: '3233', bairro: "Praia do Futuro I", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "CASTELLAR II", lat: "-3.810770", lon: "-38.522770", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -148,7 +148,7 @@ class Local {
             },
             {
                 nome: "COSTA BARRETO", lat: "-3.747140", lon: "-38.505040", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Joaquim Nabuco', num: '2485', bairro: "Dionisio Torres", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Joaquim Nabuco', num: '2485', bairro: "Dionísio Torres", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "CYNTHIA", lat: "-3.747121", lon: "-38.467609", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -216,7 +216,7 @@ class Local {
             },
             {
                 nome: "HYDE PARK", lat: "-3.744670", lon: "-38.502110", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Dom Expedito Lopes', num: '2577', bairro: "Dionisio Torres", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Dom Expedito Lopes', num: '2577', bairro: "Dionísio Torres", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "IDEZITH CÂMARA", lat: "-3.790650", lon: "-38.460740", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -240,7 +240,7 @@ class Local {
             },
             {
                 nome: "ISOLA DI CAPRI", lat: "-3.728740", lon: "-38.503080", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Tenente Amauri Pi', num: '380', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Tenente Amauri Pi', num: '380', bairro: "Meireles", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "ITAMARACA", lat: "-3.743920", lon: "-38.479730", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -288,7 +288,7 @@ class Local {
             },
             {
                 nome: "LAGO JACAREY", lat: "-3.798680", lon: "-38.492920", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Máximo Linhares', num: '299', bairro: "Cambeba", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Máximo Linhares', num: '299', bairro: "Cidade dos Funcionários", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "LARA", lat: "-3.729760", lon: "-38.494620", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -352,7 +352,7 @@ class Local {
             },
             {
                 nome: "MARIA JOSE", lat: "-3.737650", lon: "-38.517070", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'João Cordeiro', num: '1991', bairro: "Piedade", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'João Cordeiro', num: '1991', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "MARIA NATIVIDADE", lat: "-3.737850", lon: "-38.514420", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -380,7 +380,7 @@ class Local {
             },
             {
                 nome: "MELISSA", lat: "-3.743404", lon: "-38.506506", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Dom Expedito Lopres', num: '1956', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Dom Expedito Lopes', num: '1956', bairro: "Dionísio Torres", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "MIRTES ANTUNES", lat: "-3.801401", lon: "-38.527832", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -392,11 +392,11 @@ class Local {
             },
             {
                 nome: "MOISES MENDES", lat: "-3.748190", lon: "-38.510440", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Barão Studart', num: '2765', bairro: "Dionisio Torres", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Barão Studart', num: '2765', bairro: "Dionísio Torres", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "MONTE VERDE", lat: "-3.826090", lon: "-38.475990", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Avenida Professor José Arthur de Carvalho', num: '400', bairro: "Lagoa Redonda", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Avenida Professor José Arthur de Carvalho', num: '400', bairro: "Guajeru", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "MONTE VILLAGE", lat: "-3.800776", lon: "-38.567590", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -424,7 +424,7 @@ class Local {
             },
             {
                 nome: "NOVO LINDO PARQUE", lat: "-3.753128", lon: "-38.502962", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Isac Amaral', num: '751', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Isac Amaral', num: '751', bairro: "Dionísio Torres", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "OMMI", lat: "-3.733540", lon: "-38.492970", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -476,7 +476,7 @@ class Local {
             },
             {
                 nome: "PORTAL DOS VENTOS", lat: "-3.791188", lon: "-38.459116", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Corrêa Lima', num: '2150', bairro: "Edson Queiroz", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Corrêa Lima', num: '2150', bairro: "Sapiranga", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "PORTO PRINCIPE", lat: "-3.808400", lon: "-38.535480", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -568,7 +568,7 @@ class Local {
             },
             {
                 nome: "SANTOS DUMONT", lat: "-3.741710", lon: "-38.481830", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Avenida Santos Dumont', num: '5600', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Avenida Santos Dumont', num: '5600', bairro: "Papicu", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "SÃO PAULO", lat: "-3.721530", lon: "-38.541060", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
@@ -600,7 +600,7 @@ class Local {
             },
             {
                 nome: "TAIAMA", lat: "-3.745935", lon: "-38.509261", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
-                end: { rua: 'Silva Paulet', num: '2500', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
+                end: { rua: 'Silva Paulet', num: '2500', bairro: "Dionísio Torres", cidade: "Fortaleza", sigla: "CE", }
             },
             {
                 nome: "TERRACES LA MAISON", lat: "-3.727680", lon: "-38.498120", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
