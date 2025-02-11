@@ -290,7 +290,6 @@ const addListItensBusca = (attr,busca,array) => {
         busca: busca,
         listCopy: arrayBuscas
     })
-    console.log(listArrayItensBusca)
 }
 
 
