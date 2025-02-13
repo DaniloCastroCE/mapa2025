@@ -114,7 +114,8 @@ const addExibir = (id) => {
             </div>
             <div id="listaItensBusca"></div>
             <div id="listaCond"></div>
-        `
+        `  
+    // if(estado === 'buscarAvancada') addlistaItensBusca()  // ativa a lista de itens
 
     for (let index = mapa.listCopy.length - 1; index >= 0; index--) {
         const ordem = (index + 1).toString().padStart(2, '0')
@@ -160,8 +161,8 @@ const buscarAvancada = () => {
     if (estado !== 'buscarAvancada') {
         document.querySelector('#slide-titulo').innerHTML = `BUSCA AVANÇADA`
         document.querySelector('#slide-conteudo').innerHTML = addConteudoBuscaAvancada()
-        addExibir('listaBusAva')
         estado = 'buscarAvancada'
+        addExibir('listaBusAva')
         moveSlide('open')
     } else {
         moveSlide('close')
@@ -196,6 +197,36 @@ const addConteudoBuscaAvancada = () => {
             </div>
         </div>
         <div id="listaBusAva"></div>
+    `
+}
+
+const addlistaItensBusca = () => {
+    const listaItensBusca = document.querySelector('#listaItensBusca')
+    listaItensBusca.innerHTML = ''
+
+
+    listaItensBusca.innerHTML += 
+    `
+    <div class="container_listaItensBusca">
+        <div class="ctn_text_listaItensBusca">
+            <span class="text_listaItensBusca">Rua</span>
+            <span class="text_listaItensBusca">Francisco...</span>
+        </div>
+        <div class="painel_listaItensBusca">
+            <div class="close_listaItensBusca">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg" 
+                    height="24px" 
+                    viewBox="0 -960 960 960" 
+                    width="24px" 
+                    fill="#5f6368">
+                    <path 
+                        d="m336-280-56-56 144-144-144-143 56-56 144 144 143-144 56 56-144 143 144 144-56 56-143-144-144 144Z"/>
+                </svg>
+            </div>
+            <span class="qt_listaItensBusca">2</span>
+        </div>
+    </div>
     `
 }
 
@@ -276,20 +307,8 @@ const clickBuscaAvancada = () => {
 
 
 let listArrayItensBusca = []
-
 const addListItensBusca = (attr,busca,array) => {
-    let arrayBuscas = []
-    array.forEach(el => {
-        arrayBuscas.push({
-            local: el,
-            marker: mapa.getMarker(el.idMarker)
-        })
-    })
-    listArrayItensBusca.push({
-        attr: attr,
-        busca: busca,
-        listCopy: arrayBuscas
-    })
+    
 }
 
 
