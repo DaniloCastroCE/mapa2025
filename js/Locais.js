@@ -417,6 +417,10 @@ class Local {
                 end: { rua: 'Afonso Celso', num: '225', bairro: "Aldeota", cidade: "Fortaleza", sigla: "CE", }
             },
             {
+                nome: "MORADA VILA GOES", lat: "-3.736172", lon: "-38.568684", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
+                end: { rua: 'Avenida Bezerra de Menezes', num: '2690', bairro: "Presidente Kennedy", cidade: "Fortaleza", sigla: "CE", }
+            },
+            {
                 nome: "NEBADON", lat: "-3.754180", lon: "-38.528890", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",
                 end: { rua: 'Avenida Depudato Oswaldo Studart', num: '362', bairro: "Fátima", cidade: "Fortaleza", sigla: "CE", }
             },
@@ -759,6 +763,10 @@ class Local {
                 end: { rua: 'Barão de Pirassinunga', num: '33', bairro: "Tijuca", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
+                nome: "CHATEAU BLANC", lat: "-22.965923", lon: "-43.200099", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
+                end: { rua: 'Sacopã', num: '792', bairro: "Lagoa", cidade: "Rio de Janeiro", sigla: "RJ", }
+            },
+            {
                 nome: "CIDADE DE MONACO", lat: "-8.029630", lon: "-34.916010", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Conselheiro Nabuco', num: '246', bairro: "Casa Amarela", cidade: "Recife", sigla: "PE", }
             },
@@ -777,6 +785,10 @@ class Local {
             {
                 nome: "COSTA AZUL", lat: "-23.632470", lon: "-46.639780", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
                 end: { rua: 'Itatiaia', num: '307', bairro: "Vila Guarani (Zona Sul)", cidade: "São Paulo", sigla: "SP", }
+            },
+            {
+                nome: "CORTINA D'AMPEZZO", lat: "-22.900338", lon: "-43.286402", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
+                end: { rua: 'Santos Titara', num: '138', bairro: "Todos os Santos", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
                 nome: "DANIELLE MORAIS", lat: "-8.197871", lon: "-34.918916", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
@@ -899,12 +911,20 @@ class Local {
                 end: { rua: 'Antônio Passos', num: '51', bairro: "Boa Viagem", cidade: "Recife", sigla: "PE", }
             },
             {
+                nome: "MONT BLANC", lat: "-22.982935", lon: "-43.201595", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
+                end: { rua: 'Barão da Torre', num: '192', bairro: "Ipanema", cidade: "Rio de Janeiro", sigla: "RJ", }
+            },
+            {
                 nome: "MORADA DA FONTE", lat: "-8.041835", lon: "-34.897020", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Rua da Angustura', num: '104', bairro: "Aflitos", cidade: "Recife", sigla: "PE", }
             },
             {
                 nome: "NIXXUS I", lat: "-8.501704", lon: "-35.004021", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
                 end: { rua: 'Cajueiro', num: '512', bairro: "Porto de Galinhas", cidade: "Ipojuca", sigla: "PE", }
+            },
+            {
+                nome: "NOVELLETO", lat: "-23.526110", lon: "-46.705129", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
+                end: { rua: 'Antônio de Mariz', num: '10', bairro: "Alto da Lapa", cidade: "São Paulo", sigla: "SP", }
             },
             {
                 nome: "OJC", lat: "-23.567270", lon: "-46.643210", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
