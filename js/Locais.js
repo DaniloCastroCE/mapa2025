@@ -787,7 +787,7 @@ class Local {
                 end: { rua: 'Itatiaia', num: '307', bairro: "Vila Guarani (Zona Sul)", cidade: "São Paulo", sigla: "SP", }
             },
             {
-                nome: "CORTINA D'AMPEZZO", lat: "-22.900338", lon: "-43.286402", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
+                nome: "CORTINA D'AMPEZZO", lat: "-22.900338", lon: "-43.286402", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
                 end: { rua: 'Santos Titara', num: '138', bairro: "Todos os Santos", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
@@ -911,7 +911,7 @@ class Local {
                 end: { rua: 'Antônio Passos', num: '51', bairro: "Boa Viagem", cidade: "Recife", sigla: "PE", }
             },
             {
-                nome: "MONT BLANC", lat: "-22.982935", lon: "-43.201595", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
+                nome: "MONT BLANC", lat: "-22.982935", lon: "-43.201595", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RIO DE JANEIRO",
                 end: { rua: 'Barão da Torre', num: '192', bairro: "Ipanema", cidade: "Rio de Janeiro", sigla: "RJ", }
             },
             {
@@ -923,7 +923,7 @@ class Local {
                 end: { rua: 'Cajueiro', num: '512', bairro: "Porto de Galinhas", cidade: "Ipojuca", sigla: "PE", }
             },
             {
-                nome: "NOVELLETO", lat: "-23.526110", lon: "-46.705129", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "RECIFE",
+                nome: "NOVELLETO", lat: "-23.526110", lon: "-46.705129", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "SÃO PAULO",
                 end: { rua: 'Antônio de Mariz', num: '10', bairro: "Alto da Lapa", cidade: "São Paulo", sigla: "SP", }
             },
             {
