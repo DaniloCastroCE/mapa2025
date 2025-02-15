@@ -25,17 +25,19 @@ const init = () => {
                 const arrayBuscaLocais = locais.locais.filter(local => local.nomeSimplificado.includes(e.target.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().trim()))
 
                 arrayBuscaLocais.forEach(local => {
-                    ulBuscar.innerHTML += `
-                            <li onclick="onclickLi(${local.idMarker})">
-                                <div>
-                                    <h3>${local.nome}</h3>
-                                    <p>Endereço: ${local.end.rua}, ${local.end.num}</p>
-                                    <p>Bairro: ${local.end.bairro}</p>
-                                    <p>Cidade: ${local.end.cidade} / ${local.end.sigla}</p>
-                                    <p>Locktec: ${local.locktec}</p>
-                                </div>
-                            </li>
-                        `
+                        if(local.ativo){
+                            ulBuscar.innerHTML += `
+                                    <li onclick="onclickLi(${local.idMarker})">
+                                        <div>
+                                            <h3>${local.nome}</h3>
+                                            <p>Endereço: ${local.end.rua}, ${local.end.num}</p>
+                                            <p>Bairro: ${local.end.bairro}</p>
+                                            <p>Cidade: ${local.end.cidade} / ${local.end.sigla}</p>
+                                            <p>Locktec: ${local.locktec}</p>
+                                        </div>
+                                    </li>
+                                `
+                        }
                 })
 
 
@@ -273,12 +275,14 @@ const clickBuscaAvancada = () => {
         if(arrayBuscaAva.length > 0){
             mapa.listCopy = []
             arrayBuscaAva.forEach(el => {
-                mapa.listCopy.push(
-                    {
-                        local: el,
-                        marker: mapa.getMarker(el.idMarker)
-                    }
-                )
+                if(el.ativo){
+                    mapa.listCopy.push(
+                        {
+                            local: el,
+                            marker: mapa.getMarker(el.idMarker)
+                        }
+                    )
+                }
             })
             addExibir('listaBusAva')
         
@@ -411,7 +415,7 @@ const onclickMarker = (obj) => {
         let existe = false
 
         mapa.listCopy.forEach(el => {
-            if (el.marker._leaflet_id === obj.marker._leaflet_id) {
+            if (el.marker._leaflet_id === obj.marker._leaflet_id && el.local.ativo) {
                 existe = true
                 return
             }
