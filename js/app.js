@@ -117,7 +117,6 @@ const addExibir = (id) => {
             <div id="listaItensBusca"></div>
             <div id="listaCond"></div>
         `  
-    // if(estado === 'buscarAvancada') addlistaItensBusca()  // ativa a lista de itens
 
     for (let index = mapa.listCopy.length - 1; index >= 0; index--) {
         const ordem = (index + 1).toString().padStart(2, '0')
@@ -165,6 +164,7 @@ const buscarAvancada = () => {
         document.querySelector('#slide-conteudo').innerHTML = addConteudoBuscaAvancada()
         estado = 'buscarAvancada'
         addExibir('listaBusAva')
+        addListItensBusca()
         moveSlide('open')
     } else {
         moveSlide('close')
@@ -199,36 +199,6 @@ const addConteudoBuscaAvancada = () => {
             </div>
         </div>
         <div id="listaBusAva"></div>
-    `
-}
-
-const addlistaItensBusca = () => {
-    const listaItensBusca = document.querySelector('#listaItensBusca')
-    listaItensBusca.innerHTML = ''
-
-
-    listaItensBusca.innerHTML += 
-    `
-    <div class="container_listaItensBusca">
-        <div class="ctn_text_listaItensBusca">
-            <span class="text_listaItensBusca">Rua</span>
-            <span class="text_listaItensBusca">Francisco...</span>
-        </div>
-        <div class="painel_listaItensBusca">
-            <div class="close_listaItensBusca">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg" 
-                    height="24px" 
-                    viewBox="0 -960 960 960" 
-                    width="24px" 
-                    fill="#5f6368">
-                    <path 
-                        d="m336-280-56-56 144-144-144-143 56-56 144 144 143-144 56 56-144 143 144 144-56 56-143-144-144 144Z"/>
-                </svg>
-            </div>
-            <span class="qt_listaItensBusca">2</span>
-        </div>
-    </div>
     `
 }
 
@@ -271,7 +241,6 @@ const clickBuscaAvancada = () => {
     }
     else if (inputBusca.value.length > 1) {
         const arrayBuscaAva = locais.getBuscarAtributo(attr.value,inputBusca.value)
-        addListItensBusca(attr.value, inputBusca.value, arrayBuscaAva)
         if(arrayBuscaAva.length > 0){
             mapa.listCopy = []
             arrayBuscaAva.forEach(el => {
@@ -285,6 +254,7 @@ const clickBuscaAvancada = () => {
                 }
             })
             addExibir('listaBusAva')
+            addListItensBusca(attr.value, inputBusca.value, arrayBuscaAva)
         
             if(mapa.exibir){
                 mapa.removerMarker()
@@ -312,7 +282,44 @@ const clickBuscaAvancada = () => {
 
 let listArrayItensBusca = []
 const addListItensBusca = (attr,busca,array) => {
+
+    if(typeof attr !== 'undefined' && typeof busca !== 'undefined' && typeof array !== 'undefined'){
+        listArrayItensBusca.push({
+            attr : attr,
+            busca: busca,
+            array: array,
+        })
+    }
     
+    const listaItensBusca = document.querySelector('#listaItensBusca')
+    listaItensBusca.innerHTML = ''
+
+    listArrayItensBusca.reverse().forEach(el => {
+        listaItensBusca.innerHTML += 
+        `
+        <div class="container_listaItensBusca">
+            <div class="ctn_text_listaItensBusca">
+                <span class="text_listaItensBusca">${el.attr}</span>
+                <span class="text_listaItensBusca">${(el.busca.length > 14) ? el.busca.substring(0,11) + "..." : el.busca}</span>
+            </div>
+            <div class="painel_listaItensBusca">
+                <div class="close_listaItensBusca">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg" 
+                        height="24px" 
+                        viewBox="0 -960 960 960" 
+                        width="24px" 
+                        fill="#5f6368">
+                        <path 
+                            d="m336-280-56-56 144-144-144-143 56-56 144 144 143-144 56 56-144 143 144 144-56 56-143-144-144 144Z"/>
+                    </svg>
+                </div>
+                <span class="qt_listaItensBusca">${el.array.length}</span>
+            </div>
+        </div>
+        `
+
+    })
 }
 
 

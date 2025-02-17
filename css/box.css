@@ -81,7 +81,8 @@
 #listaCond{
     flex-grow: 1;
     overflow-y: auto;
-    max-height: calc(100% - 90px);
+    max-height: calc(100% - 110px);
+    margin-top: 20px;
 }
 
 .boxExibirP {
@@ -244,7 +245,7 @@
 #listaBusAva {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 80px);
+    height: calc(100% - 100px);
 }
 
 #listaItensBusca {
@@ -252,7 +253,7 @@
     flex-direction: row;
     overflow-y: auto;
     align-items: center;
-    max-height: 70px;
+    height: auto;
     width: 100%;
     padding: 1px 5px;
     gap: 5px;

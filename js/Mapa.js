@@ -122,14 +122,11 @@ class Mapa {
                     permanent: true,
                     direction: 'top'
                 }
-            )
-        
+            ).addTo(this.map)
+
         marker.on('click', () => {
             callback({ local: local, marker: marker })
         })
-        
-        if(local.ativo) marker.addTo(this.map)
-
         Object.assign(local, (
             {
                 idMarker: marker._leaflet_id,
@@ -137,15 +134,13 @@ class Mapa {
                     .normalize("NFD")
                     .replace(/[\u0300-\u036f]/g, "")
                     .toUpperCase().trim()
-            })
-        )
-
+            }))
         return marker
     }
 
     addMultMaker(array, callback) {
         array.forEach(el => {
-                this.markers.push(this.addMarker(el, callback))    
+            if(el.ativo) this.markers.push(this.addMarker(el, callback)) 
         })
     }
 
@@ -183,9 +178,7 @@ class Mapa {
     toggleMarker() {
         if (this.exibir) { // Adiconar Markers
             this.markers.forEach(marker => {
-                if(locais.getLocalIdMarker(marker._leaflet_id) !== undefined){
-                    marker.addTo(this.map)
-                }
+                marker.addTo(this.map)
             })
             this.exibir = false
         }
