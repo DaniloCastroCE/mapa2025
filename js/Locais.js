@@ -651,11 +651,11 @@ class Local {
             end: { rua: 'Industrial Amílcar Araújo', num: '835', bairro: "Coité", cidade: "Eusébio", sigla: "CE", } 
             },
             { 
-            nome: "VENEZA", nomeSimplificado: "veneza", lat: "-3.741190", lon: "-38.480040", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",   
+            nome: "VENEZA (Rua Joaquim Lima)", nomeSimplificado: "veneza (rua joaquim lima)", lat: "-3.741190", lon: "-38.480040", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",   
             end: { rua: 'Joaquim Lim', num: '699', bairro: "Papicu", cidade: "Fortaleza", sigla: "CE", } 
             },
             { 
-            nome: "VENEZA", nomeSimplificado: "veneza", lat: "-3.767250", lon: "-38.535880", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",   
+            nome: "VENEZA (Rua Moreira Gomes)", nomeSimplificado: "veneza (rua moreira gomes)", lat: "-3.767250", lon: "-38.535880", ativo: true, tipo: "não definido", dvr: ["não definido"], locktec: "FORTALEZA",   
             end: { rua: 'Almirante Rufino', num: '665', bairro: "Vila União", cidade: "Fortaleza", sigla: "CE", } 
             },
             { 
